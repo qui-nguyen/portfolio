@@ -1,2 +1,68 @@
-@import "../utils/_variables.scss";
+@import "../utils/variables";
 
+@import "../utils/mixin";
+
+.navbar {
+    display: grid;
+    grid-template-columns: 1fr 5fr;
+    font-weight: 900 !important;
+
+    .navigation {
+        @include display-flex;
+        justify-content: space-around;
+
+
+        @media (max-width: 640px) {
+            display: none;
+        }
+
+        &--mobile {
+            display: none;
+
+            @media (max-width: 640px) {
+                @include display-flex($justifyContent: flex-end);
+                position: relative;
+
+                .hamburger {
+                    border: none;
+                    background-color: $color-secondary;
+                    position: absolute;
+                }
+
+                .hamburger-navigation {
+                    @include absolute-center;
+                    @include display-flex($alignItems: flex-end);
+                    flex-direction: column;
+
+                    h2 {
+                        font-size: 20px;
+                    }
+                }
+            }
+        }
+    }
+
+}
+
+a {
+    text-decoration: none;
+    font-weight: bolder;
+
+}
+
+.personal-logo {
+    @include display-flex;
+    justify-content: flex-start;
+
+    .logo {
+        @include display-flex;
+        @include personal-logo;
+    }
+}
+
+.menu-logo {
+    justify-self: end;
+    border: none;
+    width: 50px;
+    height: 50px;
+}

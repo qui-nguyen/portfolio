@@ -1,0 +1,40 @@
+@mixin card-shadow {
+    box-shadow: 10px 10px 5px rgba(206, 174, 158, 0.2);
+}
+
+// Personnal logo
+@mixin personal-logo {
+    @include card-shadow;
+    width: 100px;
+    height: 100px;
+    background-color: $mainColor2;
+    color: $btnTextColor;
+    font-size: 30px;
+    font-weight: 900;
+    border-radius: 5%;
+
+    @media (max-width: 640px) {
+        width: 60px;
+        height: 60px;
+        font-size: 20px;
+        font-weight: bold
+    }
+}
+
+// Display flex center
+@mixin display-flex ($justifyContent: center, $alignItems: center) {
+    display: flex;
+    justify-content: $justifyContent;
+    align-items: $alignItems;
+}
+
+// Position absolute center
+@mixin absolute-center {
+    position: absolute;
+    margin-left: auto;
+    margin-right: auto;
+    top: 80px;
+    left: 0;
+    right: 0px;
+    text-align: center;
+}
