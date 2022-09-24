@@ -38,3 +38,15 @@
     right: 0px;
     text-align: center;
 }
+
+// Link
+@mixin link {
+    text-decoration: none;
+    font-weight: bolder;
+
+    &:hover,
+    &:focus {
+        background-color: $mainColor1;
+        color: $mainColor1;
+    }
+}

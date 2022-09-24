@@ -1,8 +1,11 @@
 import '../../assets/styles/components/header.scss';
+import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
-import { HiMenu } from "react-icons/hi";
+import { HiMenu, HiX } from "react-icons/hi";
 
 const Header = () => {
+    const [visibleMenu, setVisibleMenu] = useState(false);
+
     return (
         <div className="navbar">
             <div className="personal-logo">
@@ -19,10 +22,11 @@ const Header = () => {
             </div>
 
             <div className="navigation--mobile">
-                <button className="hamburger">
-                    <HiMenu className="menu-logo" />
+                <button onClick={() => visibleMenu ? setVisibleMenu(false) : setVisibleMenu(true)} className="hamburger">
+                {visibleMenu ?  <HiX className={`menu-logo`} /> : <HiMenu className={`menu-logo`} />}
                 </button>
-                <div className="hamburger-navigation">
+                {/* <div className={`hamburger-navigation ${open}`}> */}
+                <div className={ `hamburger-navigation ${ visibleMenu ? "hamburger-navigation--open" : ""}` }>
                     <div className="presentation"><h2>Présentation</h2></div>
                     <div className="projects">
                         <Link to="/projects" ><h2>Mes projets</h2></Link>

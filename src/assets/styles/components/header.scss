@@ -2,6 +2,27 @@
 
 @import "../utils/mixin";
 
+a {
+    @include link;
+}
+
+.personal-logo {
+    @include display-flex;
+    justify-content: flex-start;
+
+    .logo {
+        @include display-flex;
+        @include personal-logo;
+    }
+}
+
+.menu-logo {
+    justify-self: end;
+    border: none;
+    width: 50px;
+    height: 50px;
+}
+
 .navbar {
     display: grid;
     grid-template-columns: 1fr 5fr;
@@ -33,36 +54,22 @@
                     @include absolute-center;
                     @include display-flex($alignItems: flex-end);
                     flex-direction: column;
+                    visibility: hidden;
+                    opacity: 0;
+                    transition: visibility 0.1s 0.1s, opacity 0.1s 0.1s ease-in;
+
+                    &--open {
+                        visibility: visible;
+                        opacity: 1;
+                    }
 
                     h2 {
                         font-size: 20px;
+
                     }
                 }
             }
         }
     }
 
-}
-
-a {
-    text-decoration: none;
-    font-weight: bolder;
-
-}
-
-.personal-logo {
-    @include display-flex;
-    justify-content: flex-start;
-
-    .logo {
-        @include display-flex;
-        @include personal-logo;
-    }
-}
-
-.menu-logo {
-    justify-self: end;
-    border: none;
-    width: 50px;
-    height: 50px;
 }
