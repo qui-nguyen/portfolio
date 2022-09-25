@@ -1,14 +1,16 @@
-import React from 'react';
-import logo from './logo.svg';
-import './assets/styles/app.scss';
-import 'bootstrap/dist/css/bootstrap.min.css';
-import Header from './pages/components/Header';
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
+import HomePage from './pages/HomePage';
+import ProjectsPage from './pages/ProjectsPage';
 
 function App() {
   return (
-    <div className="App">
-      <Header></Header>
-    </div>
+    <Router>
+      <Switch>
+        <Route exact path="/" component={HomePage} />
+        <Route exact path="/Projects" component={ProjectsPage} />
+      </Switch>
+    </Router>
+
   );
 }
 

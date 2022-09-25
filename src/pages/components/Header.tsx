@@ -1,43 +1,42 @@
-import Container from 'react-bootstrap/Container';
-import Nav from 'react-bootstrap/Nav';
-import Navbar from 'react-bootstrap/Navbar';
-import NavDropdown from 'react-bootstrap/NavDropdown';
+
+import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
+import { HiMenu, HiX } from "react-icons/hi";
 
 const Header = () => {
+    const [visibleMenu, setVisibleMenu] = useState(false);
+
     return (
-        <Navbar className="header" collapseOnSelect expand="lg" variant="dark">
-            <Container>
-                <Navbar.Brand href="#home">
-                    <div className="logo">
-                        QuiN.
+        <div className="navbar">
+            <div className="personal-logo">
+                <Link to="/" ><div className="logo">QuiN.</div></Link>
+            </div>
+
+            <div className="navigation">
+                <div className="presentation"><h2>Présentation</h2></div>
+                <div className="projects">
+                    <Link to="/projects" ><h2>Mes projets</h2></Link>
+                </div>
+                <div className="formations"><h2>Mes formations</h2></div>
+                <div className="contacts"><h2>Contacts</h2></div>
+            </div>
+
+            <div className="navigation--mobile">
+                <button onClick={() => visibleMenu ? setVisibleMenu(false) : setVisibleMenu(true)} className="hamburger">
+                {visibleMenu ?  <HiX className={`menu-logo`} /> : <HiMenu className={`menu-logo`} />}
+                </button>
+                {/* <div className={`hamburger-navigation ${open}`}> */}
+                <div className={ `hamburger-navigation ${ visibleMenu ? "hamburger-navigation--open" : ""}` }>
+                    <div className="presentation"><h2>Présentation</h2></div>
+                    <div className="projects">
+                        <Link to="/projects" ><h2>Mes projets</h2></Link>
                     </div>
-                </Navbar.Brand>
-                <Navbar.Toggle aria-controls="responsive-navbar-nav" />
-                <Navbar.Collapse id="responsive-navbar-nav">
-                    <Nav className="me-auto">
-                        <Nav.Link href="#features">Features</Nav.Link>
-                        <Nav.Link href="#pricing">Pricing</Nav.Link>
-                        <NavDropdown title="Dropdown" id="collasible-nav-dropdown">
-                            <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
-                            <NavDropdown.Item href="#action/3.2">
-                                Another action
-                            </NavDropdown.Item>
-                            <NavDropdown.Item href="#action/3.3">Something</NavDropdown.Item>
-                            <NavDropdown.Divider />
-                            <NavDropdown.Item href="#action/3.4">
-                                Separated link
-                            </NavDropdown.Item>
-                        </NavDropdown>
-                    </Nav>
-                    <Nav>
-                        <Nav.Link href="#deets">More deets</Nav.Link>
-                        <Nav.Link eventKey={2} href="#memes">
-                            Dank memes
-                        </Nav.Link>
-                    </Nav>
-                </Navbar.Collapse>
-            </Container>
-        </Navbar>
+                    <div className="formations"><h2>Mes formations</h2></div>
+                    <div className="contacts"><h2>Contacts</h2></div>
+                </div>
+            </div>
+
+        </div>
     );
 }
 

@@ -13,4 +13,18 @@
 //     }
 //   }
 
-@import "../utils/_variables.scss";
+// All styles ussed by all components 
+
+@import "utils/variables";
+
+@import "utils/mixin";
+
+@import "utils/typography";
+
+@import "utils/responsive";
+
+@import "components/header.scss";
+
+@import "components/jumbotron.scss";
+
+
