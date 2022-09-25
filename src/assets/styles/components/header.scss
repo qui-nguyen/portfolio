@@ -1,11 +1,3 @@
-@import "../utils/variables";
-
-@import "../utils/mixin";
-
-a {
-    @include link;
-}
-
 .personal-logo {
     @include display-flex;
     justify-content: flex-start;
@@ -32,6 +24,12 @@ a {
         @include display-flex;
         justify-content: space-around;
 
+        .projects  {
+            &:hover {
+                scale: 1.1;
+                color: $mainColor1;
+            }
+        }
 
         @media (max-width: 640px) {
             display: none;
@@ -56,16 +54,19 @@ a {
                     flex-direction: column;
                     visibility: hidden;
                     opacity: 0;
-                    transition: visibility 0.1s 0.1s, opacity 0.1s 0.1s ease-in;
+                    transition: display .1s, opacity .5s ease-in;
 
                     &--open {
                         visibility: visible;
                         opacity: 1;
+                        background-color: $color-secondary;
+                        width: 180px;
+                        position: absolute;
+                        margin-right: 0px;
                     }
 
                     h2 {
                         font-size: 20px;
-
                     }
                 }
             }

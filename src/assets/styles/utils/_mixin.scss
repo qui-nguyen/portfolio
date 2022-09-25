@@ -40,13 +40,13 @@
 }
 
 // Link
-@mixin link {
+@mixin link-scale {
     text-decoration: none;
     font-weight: bolder;
+    scale: 1;
 
     &:hover,
     &:focus {
-        background-color: $mainColor1;
-        color: $mainColor1;
+        scale: 1.1;
     }
 }

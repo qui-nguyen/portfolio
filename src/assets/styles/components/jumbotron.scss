@@ -1,0 +1,58 @@
+@import "../utils/variables";
+
+.jumbotron {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 100%;
+    background-color: $mainColor2;
+    margin: 20px 0;
+
+    &__img {
+        img {
+            width: 100%;
+        }
+    }
+
+    &__text {
+        color: $btnTextColor;
+        justify-self: center;
+        align-self: center;
+
+        table {
+            border-collapse: separate;
+            border-spacing: 200px 0;
+        }
+    }
+}
+
+@media (max-width:1280px) {
+    .jumbotron {
+        &__text {
+            table {
+                border-spacing: 100px 0;
+            }
+        }
+    }
+}
+
+@media (max-width:960px) {
+    .jumbotron {
+        &__text {
+            table {
+                border-spacing: 50px 0;
+            }
+        }
+    }
+}
+
+@media (max-width:640px) {
+    .jumbotron {
+        grid-template-columns: 1fr;
+
+        &__text {
+            table {
+                border-spacing: 50px 0;
+            }
+        }
+    }
+}

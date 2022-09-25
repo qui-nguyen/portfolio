@@ -1,10 +1,14 @@
-import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import Header from './components/Header';
+import Jumbotron from './components/Jumbotron';
+import Contact from './components/Contact';
 
 const HomePage = () => {
-    return (<div className="Header">
+    return (
+    <>
         <Header></Header>
-    </div>)
+        <Jumbotron></Jumbotron>
+        <Contact></Contact>
+    </>)
 }
 
 export default HomePage;
