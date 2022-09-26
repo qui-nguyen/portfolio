@@ -9,7 +9,7 @@ const Contact = () => {
                 <FaGithubSquare style={{ fontSize: "5rem", color: "#171515", marginRight: "3rem" }} />
             </a>
 
-            <a href="www.linkedin.com/in/thanh-qui-nguyen">
+            <a href="https://linkedin.com/in/thanh-qui-nguyen">
                 <FaLinkedin style={{ fontSize: "5rem", color: "#0e76a8" }} />
             </a>
         </div>

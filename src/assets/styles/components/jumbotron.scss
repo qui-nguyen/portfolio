@@ -5,7 +5,7 @@
     grid-template-columns: 1fr 1fr;
     width: 100%;
     background-color: $mainColor2;
-    margin: 20px 0;
+    margin: 20px 0 50px 0;
 
     &__img {
         img {
@@ -27,6 +27,8 @@
 
 @media (max-width:1280px) {
     .jumbotron {
+        margin: 20px 0 0 0;
+
         &__text {
             table {
                 border-spacing: 100px 0;
