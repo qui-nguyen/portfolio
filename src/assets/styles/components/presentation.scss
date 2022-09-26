@@ -1,0 +1,31 @@
+.wrapper {
+    background-color: $backgroundColor1;
+    height: fit-content;
+    margin-top: 50px;
+
+    .presentation {
+        @include display-flex($justifyContent: space-around);
+        flex-direction: column;
+        height: 500px;
+        padding: 50px 200px;
+
+        @media (max-width: 1280px) {
+            padding: 50px 10px;
+        }
+
+        &__title {
+            color: $titleColor;
+            text-align: center;
+        }
+
+        &__sub-title {
+            p {
+                font-size: 20px;
+                line-height: 38px;
+                font-weight: 400;
+                color: $titleColor;
+                text-align: center;
+            }
+        }
+    }
+}

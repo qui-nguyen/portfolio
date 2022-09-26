@@ -1,6 +1,7 @@
 import Header from './components/Header';
 import Jumbotron from './components/Jumbotron';
 import Contact from './components/Contact';
+import Presentation from './components/Presentation'
 
 const HomePage = () => {
     return (
@@ -8,6 +9,7 @@ const HomePage = () => {
         <Header></Header>
         <Jumbotron></Jumbotron>
         <Contact></Contact>
+        <Presentation></Presentation>
     </>)
 }
 
