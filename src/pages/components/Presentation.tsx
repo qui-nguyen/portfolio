@@ -6,7 +6,7 @@ const Presentation = () => {
         <div className="wrapper">
             <div className="presentation">
                 <div className="presentation__img">
-                    <img src={ portrait } alt="" />
+                    <img src={ portrait } alt="portrait-Qui-N." />
                 </div>
 
                 <div className="presentation__title typing">Bonjour, je m'appelle Thanh Qui</div>
