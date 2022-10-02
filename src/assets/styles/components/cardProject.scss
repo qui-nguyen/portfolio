@@ -1,6 +1,4 @@
 .card-project {
-
-    // width: 30%;
     .box {
         @include display-flex;
         flex-direction: column;
@@ -40,7 +38,7 @@
                 width: 70%;
 
                 img {
-                    height: 100%; 
+                    height: 100%;
                     width: 100%;
                 }
 
@@ -54,6 +52,50 @@
 
             .btn {
                 @include btn-pink;
+            }
+        }
+    }
+}
+
+@media (max-width: 640px) {
+    .card-project {
+        .box {
+            min-height: 600px;
+
+            &__header {
+                height: 70px;
+
+                .title {
+                    font-size: 2rem;
+                    font-weight: 800;
+                    color: $mainColor2;
+                    padding-bottom: 20px;
+                }
+            }
+
+            &__content {
+                margin-top: 40px;
+
+                .img {
+                    height: 300px;
+                    width: 90%;
+
+                    img {
+                        height: 100%;
+                        width: 100%;
+                    }
+
+                }
+
+                .description {
+                    color: $color-secondary;
+                    text-align: center;
+                    width: 90%;
+                }
+
+                .btn {
+                    @include btn-pink;
+                }
             }
         }
     }

@@ -111,6 +111,7 @@ const Projects = () => {
 
 
                 </div>
+                <div className="projects__btn"><div>En savoir plus</div></div>
             </div>
         </>
     )
