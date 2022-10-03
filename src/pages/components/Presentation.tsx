@@ -9,7 +9,7 @@ const Presentation = () => {
                     <img src={ portrait } alt="portrait-Qui-N." />
                 </div>
 
-                <div className="presentation__title typing">Bonjour, je m'appelle Thanh Qui</div>
+                <div className="presentation__title typing">Bonjour, je suis Thanh Qui</div>
 
                 <div className="presentation__sub-title">
 
