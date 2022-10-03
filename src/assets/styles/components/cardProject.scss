@@ -1,0 +1,102 @@
+.card-project {
+    .box {
+        @include display-flex;
+        flex-direction: column;
+
+        min-height: 800px;
+        width: 100%;
+        background-color: $mainColor2;
+        border-radius: 20px;
+        position: relative;
+
+        &__header {
+            height: 100px;
+            width: 70%;
+            position: absolute;
+            top: -5%;
+            left: 15%;
+            background-color: $backgroundColor2;
+            border-radius: 20px;
+
+            @include display-flex($alignItems: flex-end);
+
+            .title {
+                font-size: 2.5rem;
+                font-weight: 800;
+                color: $mainColor2;
+                padding-bottom: 30px;
+            }
+        }
+
+        &__content {
+            @include display-flex;
+            flex-direction: column;
+            margin-top: 70px;
+
+            .img {
+                height: 300px;
+                width: 70%;
+
+                img {
+                    height: 100%;
+                    width: 100%;
+                }
+
+            }
+
+            .description {
+                color: $color-secondary;
+                text-align: center;
+                margin: 0 50px;
+            }
+
+            .btn {
+                @include btn-pink;
+            }
+        }
+    }
+}
+
+@media (max-width: 640px) {
+    .card-project {
+        .box {
+            min-height: 600px;
+
+            &__header {
+                height: 70px;
+
+                .title {
+                    font-size: 2rem;
+                    font-weight: 800;
+                    color: $mainColor2;
+                    padding-bottom: 20px;
+                }
+            }
+
+            &__content {
+                margin-top: 40px;
+
+                .img {
+                    height: 300px;
+                    width: 90%;
+
+                    img {
+                        height: 100%;
+                        width: 100%;
+                    }
+
+                }
+
+                .description {
+                    color: $color-secondary;
+                    text-align: center;
+                    width: 90%;
+                }
+
+                .btn {
+                    @include btn-pink;
+                }
+            }
+        }
+    }
+}
