@@ -1,0 +1,24 @@
+.competences {
+    @include display-flex;
+    flex-direction: column;
+    color: $titleColor;
+    padding: 50px 0px;
+
+    &__title {
+        margin: 0 0 50px;
+    }
+
+    &__skills {
+        @include display-flex($justifyContent: space-evenly);
+        width: 100%;
+
+        img, svg {
+            height: 5rem;
+            font-size: 5rem;
+            @media (max-width: "640px") {
+                height: 3rem;
+                font-size: 3rem;
+            }
+        }
+    }
+}
