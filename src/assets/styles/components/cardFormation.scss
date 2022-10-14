@@ -1,0 +1,101 @@
+.card-formation {
+    .box {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        justify-items: center;
+        align-items: center;
+        height: 500px;
+
+        @media (max-width: 1024px) {
+            grid-template-columns: 1fr;
+        }
+
+        &--colored {
+            background-color: $backgroundColor1;
+            border-radius: 10px;
+        }
+
+        &__img {
+
+            &--left {
+                grid-column: 1 / span 1;
+
+                @media (max-width: 1024px) {
+                    grid-column: 1 / span 1;
+                    order: 1;
+                }
+            }
+
+            &--right {
+                grid-column: 2 / span 1;
+                order: 1;
+
+                @media (max-width: 1024px) {
+                    grid-column: 1 / span 1;
+                    order: 1;
+                }
+            }
+
+            .img {
+                height: 100%;
+                width: auto;
+
+                img {
+                    max-width: 500px;
+                    height: auto;
+                    border-radius: 20px;
+                    box-shadow: 20px 20px 30px rgba(206, 174, 158, 0.2);
+                }
+            }
+
+        }
+
+        &__content {
+            @include display-flex;
+            flex-direction: column;
+            color: $titleColor;
+            width: 70%;
+            height: auto;
+
+            .sub-title {
+                color: $mainColor2;
+            }
+
+            .description {
+                color: $subTitleColor;
+            }
+
+            &--left {
+                grid-column: 1 / span 1;
+
+                @media (max-width: 1024px) {
+                    grid-column: 1 / span 1;
+                    order: 1;
+                }
+
+                .content-container {
+                    @include display-flex;
+                    flex-direction: column;
+                    background-color: $backgroundColor1;
+                }
+            }
+
+            &--right {
+                grid-column: 2 / span 1;
+                order: 1;
+                background-color: $backgroundColor1;
+
+                @media (max-width: 1024px) {
+                    grid-column: 1 / span 1;
+                    order: 1;
+                }
+
+                .content-container {
+                    @include display-flex;
+                    flex-direction: column;
+                    background-color: $backgroundColor2;
+                }
+            }
+        }
+    }
+}

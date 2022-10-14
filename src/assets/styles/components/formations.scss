@@ -1,0 +1,15 @@
+.formations {
+    @include display-flex;
+    flex-direction: column;
+    color: $titleColor;
+    padding: 50px 0px;
+    width: 100%;;
+
+    &__title {
+        margin: 0 0 50px;
+    }
+
+    &__cards {
+        width: 100%;
+    }
+}

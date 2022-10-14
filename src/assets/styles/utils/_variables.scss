@@ -1,6 +1,6 @@
 // Colors palette
 
-$color-primary-1: #E9204F;
+$color-primary-1: #FFCA28; // #E9204F;
 $color-primary-2: #0A0F1B;
 $color-secondary : #FFFFFF;
 $color-ternary : #321D1D;
@@ -11,7 +11,7 @@ $color-quinary : #F6F6F6;
 
 $mainColor1: $color-primary-1;
 $mainColor2: $color-primary-2;
-$btnTextColor: $color-secondary;
+$btnTextColor: $color-primary-2;
 $titleColor: $color-ternary;
 $subTitleColor: $color-quaternary;
 $backgroundColor1: $color-quinary;
@@ -25,10 +25,10 @@ $sectionFont: 'Avant Grade', 'Poppins', sans-serif;
 
 // // Colors palette
 
-// $color-primary-1: #f9bc60;
-// $color-primary-2: #004643;
-// $color-secondary : #001e1d;
-// $color-ternary : #fffffe;
+// $color-primary-1: #8AB4F8;
+// $color-primary-2: #202124;
+// $color-secondary : #FFFFFF;
+// $color-ternary : #202124;
 // $color-quaternary : #757d9a;
 // $color-quinary : #F6F6F6;
 
@@ -36,14 +36,9 @@ $sectionFont: 'Avant Grade', 'Poppins', sans-serif;
 
 // $mainColor1: $color-primary-1;
 // $mainColor2: $color-primary-2;
-// $btnTextColor: $color-secondary;
+// $btnTextColor: $color-primary-2;
 // $titleColor: $color-ternary;
 // $subTitleColor: $color-quaternary;
-// $backgroundColor1: $color-quinary;
-// $backgroundColor2: #abd1c6;
-
-
-// // Font Types
-
-// $mainFont: 'Trade Gothic', 'Roboto Condensed', sans-serif;
-// $sectionFont: 'Avant Grade', 'Poppins', sans-serif;
+// $backgroundColor1: #788076;
+// $backgroundColor2: $color-secondary;
+// $backgroundColor3: #202124;

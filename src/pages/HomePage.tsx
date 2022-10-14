@@ -4,6 +4,7 @@ import Contact from './components/Contact';
 import Presentation from './components/Presentation';
 import Projects from './components/Projects';
 import Competences from './components/Competences';
+import Formations from './components/Formations';
 
 const HomePage = () => {
     return (
@@ -14,6 +15,7 @@ const HomePage = () => {
         <Presentation></Presentation>
         <Projects></Projects>
         <Competences></Competences>
+        <Formations></Formations>
     </>)
 }
 
