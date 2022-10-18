@@ -4,15 +4,16 @@
         grid-template-columns: 1fr 1fr;
         justify-items: center;
         align-items: center;
-        height: 500px;
+        height: fit-content;
+        padding: 50px 30px;
 
-        @media (max-width: 1024px) {
+        @media (max-width: 1280px) {
             grid-template-columns: 1fr;
         }
 
         &--colored {
             background-color: $backgroundColor1;
-            border-radius: 10px;
+            border-radius: 20px;
         }
 
         &__img {
@@ -20,7 +21,7 @@
             &--left {
                 grid-column: 1 / span 1;
 
-                @media (max-width: 1024px) {
+                @media (max-width: 1280px) {
                     grid-column: 1 / span 1;
                     order: 1;
                 }
@@ -30,7 +31,7 @@
                 grid-column: 2 / span 1;
                 order: 1;
 
-                @media (max-width: 1024px) {
+                @media (max-width: 1280px) {
                     grid-column: 1 / span 1;
                     order: 1;
                 }
@@ -41,7 +42,7 @@
                 width: auto;
 
                 img {
-                    max-width: 500px;
+                    max-width: 600px;
                     height: auto;
                     border-radius: 20px;
                     box-shadow: 20px 20px 30px rgba(206, 174, 158, 0.2);
@@ -68,7 +69,7 @@
             &--left {
                 grid-column: 1 / span 1;
 
-                @media (max-width: 1024px) {
+                @media (max-width: 1280px) {
                     grid-column: 1 / span 1;
                     order: 1;
                 }
@@ -77,6 +78,10 @@
                     @include display-flex;
                     flex-direction: column;
                     background-color: $backgroundColor1;
+                    height: 500px;
+                    width: 600px;
+                    box-shadow: 20px 20px 30px rgba(50, 50, 46, 0.2);
+                    border-radius: 20px;
                 }
             }
 
@@ -85,7 +90,7 @@
                 order: 1;
                 background-color: $backgroundColor1;
 
-                @media (max-width: 1024px) {
+                @media (max-width: 1280px) {
                     grid-column: 1 / span 1;
                     order: 1;
                 }
@@ -94,6 +99,10 @@
                     @include display-flex;
                     flex-direction: column;
                     background-color: $backgroundColor2;
+                    height: 500px;
+                    width: 600px;
+                    box-shadow: 20px 20px 30px rgba(50, 50, 46, 0.2);
+                    border-radius: 20px;
                 }
             }
         }
