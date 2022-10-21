@@ -44,7 +44,7 @@
 
                 .hamburger {
                     border: none;
-                    background-color: $color-secondary;
+                    background-color: $btnColor;
                     position: absolute;
                 }
 
@@ -59,7 +59,7 @@
                     &--open {
                         visibility: visible;
                         opacity: 1;
-                        background-color: $color-secondary;
+                        background-color: $backgroundColor1;
                         width: 180px;
                         position: absolute;
                         margin-right: 0px;

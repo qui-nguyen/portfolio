@@ -48,7 +48,7 @@
                 font-size: 20px;
                 line-height: 38px;
                 font-weight: 400;
-                color: $titleColor;
+                color: $textColor;
                 text-align: center;
             }
         }
@@ -62,7 +62,7 @@
 .typing {
     height: 100%;
     justify-self: center;
-    color: $titleColor;
+    color: $headerColor;
     text-align: center;
     width: 26ch;
     animation: typing 2s steps(22), blink 0.5s step-end infinite alternate;

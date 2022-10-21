@@ -6,11 +6,11 @@ const Contact = () => {
     return (
         <div style={{ display: "flex", justifyContent: "center", alignItems: "center", height: "8rem" }}>
             <a href="https://github.com/qui-nguyen">
-                <FaGithubSquare style={{ fontSize: "5rem", color: "#171515", marginRight: "3rem" }} />
+                <FaGithubSquare style={{ fontSize: "5rem", color: "#FFFFFF", marginRight: "3rem" }} />
             </a>
 
             <a href="https://linkedin.com/in/thanh-qui-nguyen">
-                <FaLinkedin style={{ fontSize: "5rem", color: "#0e76a8" }} />
+                <FaLinkedin style={{ fontSize: "5rem", color: "#0e76a8", backgroundColor:"#FFFFFF" }} />
             </a>
         </div>
     )
