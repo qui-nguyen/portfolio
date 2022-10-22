@@ -5,10 +5,12 @@ const Jumbotron = () => {
 
     return (
         <div className="jumbotron">
-            <div className="jumbotron__img">
-                <img src={urlJumbotronImg} alt="" />
-            </div>
-            <div className="jumbotron__text">
+            
+            {/* <div className="jumbotron__img"> */}
+                <img src="/jumbotron-img.jpg" alt="" />
+                <div className="slogan">Développons l’avenir</div>
+            {/* </div> */}
+            {/* <div className="jumbotron__text">
                 <table>
                     <thead>
                         <tr>
@@ -33,7 +35,7 @@ const Jumbotron = () => {
                     </tbody>
                 </table>
 
-            </div>
+            </div> */}
         </div>
     )
 }

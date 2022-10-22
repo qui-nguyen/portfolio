@@ -12,40 +12,45 @@ import CardProject from "./CardProject";
 
 SwiperCore.use([EffectCoverflow, Pagination, Navigation, Autoplay]);
 
-const projectsData: { name: string; img: string; desc: string; link: string, nameLink: string }[] = [
+const projectsData: { name: string; img: string; desc: string; link: string, nameLink: string, logo: string }[] = [
     {
         name: "everybuddy",
         img: "/ticketac.png",
         desc: "Application mobile qui permet de vous géolocaliser, de suivre l’historique de vos déplacements et de chatter avec l’ensemble des utilisateurs connectés à l’application.",
         link: "https://github.com/qui-nguyen",
-        nameLink: "Github"
+        nameLink: "Github",
+        logo: '/logo-loca.png'
     },
     {
         name: "test1",
         img: "/bikeshop.png",
         desc: "Application mobile qui permet de vous géolocaliser, de suivre l’historique de vos déplacements et de chatter avec l’ensemble des utilisateurs connectés à l’application.",
         link: "",
-        nameLink: "Github"
+        nameLink: "Github",
+        logo: '/logo-loca.png'
     },
     {
         name: "test2",
         img: "/weatherapp.png",
         desc: "Application mobile qui permet de vous géolocaliser, de suivre l’historique de vos déplacements et de chatter avec l’ensemble des utilisateurs connectés à l’application.",
         link: "",
-        nameLink: "Github"
+        nameLink: "Github",
+        logo: '/logo-loca.png'
     },
     {
         name: "test3",
         img: "/morningnews.png",
         desc: "Application mobile qui permet de vous géolocaliser, de suivre l’historique de vos déplacements et de chatter avec l’ensemble des utilisateurs connectés à l’application.",
         link: "",
-        nameLink: "Github"
+        nameLink: "Github",
+        logo: '/logo-loca.png'
     },
     {
         name: "test4",
         img: "/mymoviz.png",
         desc: "Application mobile qui permet de vous géolocaliser, de suivre l’historique de vos déplacements et de chatter avec l’ensemble des utilisateurs connectés à l’application.",
-        link: "", nameLink: "Github"
+        link: "", nameLink: "Github",
+        logo: '/logo-loca.png'
     },
 ];
 
@@ -80,15 +85,15 @@ const Projects = () => {
                     <Swiper
                         slidesPerView={isDesktop ? 3 : (isTablet ? 2 : 1)}
                         spaceBetween={30}
-                        autoplay={{
-                            delay: 3000,
-                            disableOnInteraction: false,
-                        }}
+                        // autoplay={{
+                        //     delay: 3000,
+                        //     disableOnInteraction: false,
+                        // }}
                         pagination={{
                             clickable: true,
                         }}
                         navigation={true}
-                        modules={[Autoplay, Pagination, Navigation]}
+                        modules={[Pagination, Navigation]} // Autoplay
                         className="mySwiper"
                     >
                         {projectsData.map((project) => {
@@ -101,6 +106,7 @@ const Projects = () => {
                                         desc={project.desc}
                                         link={project.link}
                                         nameLink={project.nameLink}
+                                        logo={project.logo}
                                     ></CardProject>
                                 </SwiperSlide>
                             )

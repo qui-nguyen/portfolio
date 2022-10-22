@@ -61,6 +61,7 @@ body {
     font-size: 1rem; //16px
     line-height: 1rem; //16px
     color: $mainColor2;
+    letter-spacing: -.022em
 }
 
 a {
@@ -79,7 +80,13 @@ h2 {
     line-height: 3rem; //40px;
 }
 
-p {
+h3 {
+    font-family: 'Inter bold';
     font-size: 1.5rem;
     line-height: 3rem;
+}
+
+p {
+    font-size: 1.2rem;
+    line-height: 2rem;
 }

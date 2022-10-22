@@ -5,6 +5,7 @@
     padding: 50px 0px;
 
     &__title {
+      @include header;
       margin: 0 0 50px;
     }
 
@@ -17,7 +18,7 @@
       margin: 2% 0;
 
       div {
-        @include btn-pink;
+        @include btn-style;
       }
     }
 }
@@ -61,12 +62,8 @@
   color: $btnColor !important;
 }
 
-.swiper-pagination-bullet-active {
-  background: $btnColor !important;
-}
-
 .swiper-pagination-bullet {
-  background: $textColor !important;
+  background: $btnColor !important;
 }
 
 

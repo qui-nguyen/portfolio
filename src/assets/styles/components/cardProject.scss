@@ -2,31 +2,11 @@
     .box {
         @include display-flex;
         flex-direction: column;
-
         min-height: 800px;
         width: 100%;
         background-color: $backgroundColor1;
         border-radius: 40px;
         position: relative;
-
-        &__header {
-            height: 70px;
-            width: 70%;
-            position: absolute;
-            top: 2%;
-            left: 15%;
-            background-color: $backgroundColor2;
-            border-radius: 20px;
-
-            @include display-flex($alignItems: flex-end);
-
-            .title {
-                font-size: 2.5rem;
-                font-weight: 800;
-                color: $mainColor2;
-                padding-bottom: 30px;
-            }
-        }
 
         &__content {
             @include display-flex;
@@ -34,14 +14,24 @@
             margin-top: 70px;
 
             .img {
-                height: 300px;
-                width: 70%;
+                height: 200px;
+                width: 50%;
+                border: solid 5px black;
+                border-radius: 10px;
 
                 img {
                     height: 100%;
                     width: 100%;
+                    border-radius: 10px;
                 }
 
+            }
+
+            .title {
+                margin-top: 15px;
+                h3 {
+                    line-height: 0;
+                }
             }
 
             .description {
@@ -51,7 +41,7 @@
             }
 
             .btn {
-                @include btn-pink;
+                @include btn-style;
             }
         }
     }
@@ -77,14 +67,13 @@
                 margin-top: 40px;
 
                 .img {
-                    height: 300px;
-                    width: 90%;
+                    height: 200px;
+                    width: 70%;
 
                     img {
                         height: 100%;
                         width: 100%;
                     }
-
                 }
 
                 .description {
@@ -94,7 +83,7 @@
                 }
 
                 .btn {
-                    @include btn-pink;
+                    @include btn-style;
                 }
             }
         }
