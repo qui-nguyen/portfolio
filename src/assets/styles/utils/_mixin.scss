@@ -4,7 +4,8 @@
 
 // Personnal logo
 @mixin personal-logo {
-    @include card-shadow;
+    // @include card-shadow;
+    border: thick #FFFFFF;
     width: 100px;
     height: 100px;
     background-color: $backgroundColor1;
@@ -12,6 +13,7 @@
     font-size: 30px;
     font-weight: 900;
     border-radius: 5%;
+    box-shadow: 3px 4px 10px #4e5156;
 
     @media (max-width: 640px) {
         width: 60px;
@@ -44,10 +46,19 @@
     text-decoration: none;
     font-weight: bolder;
     scale: 1;
+    color: white;
+
+    &:link, &:visited {
+        text-decoration: none;
+    }
 
     &:hover,
     &:focus {
         scale: 1.1;
+    }
+
+    &:active {
+        text-decoration: none;
     }
 }
 

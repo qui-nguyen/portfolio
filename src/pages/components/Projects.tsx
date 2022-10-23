@@ -58,7 +58,11 @@ const projectsData: { name: string; img: string; desc: string; link: string, nam
 const Projects = () => {
 
       const isDesktop = useMediaQuery({
-        query: "(min-width: 1224px)"
+        query: "(min-width: 1600px)"
+      });
+
+      const isHorizontal = useMediaQuery({
+        query: "(min-width: 1028px)"
       });
     
       const isTablet = useMediaQuery({
@@ -79,11 +83,11 @@ const Projects = () => {
     
     return (
         <>
-            <div className="projects">
+            <div id="projects" className="projects">
                 <div className="projects__title"><h1>Mes projets</h1></div>
                 <div className="projects__swipper">
                     <Swiper
-                        slidesPerView={isDesktop ? 3 : (isTablet ? 2 : 1)}
+                        slidesPerView={isDesktop || isHorizontal ? 3 : (isTablet ? 2 : 1)}
                         spaceBetween={30}
                         // autoplay={{
                         //     delay: 3000,

@@ -3,7 +3,7 @@ import { RiDoubleQuotesL, RiDoubleQuotesR } from "react-icons/ri";
 
 const Presentation = () => {
     return (
-        <div className="wrapper">
+        <div id="presentation" className="wrapper">
             <div className="presentation">
                 <div className="presentation__img">
                     <img src={ portrait } alt="portrait-Qui-N." />

@@ -1,10 +1,10 @@
-
-import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
-import { HiMenu, HiX } from "react-icons/hi";
+import NavbarMobile from './NavbarMobile';
+
+import { RefObject, useRef } from 'react';
 
 const Header = () => {
-    const [visibleMenu, setVisibleMenu] = useState(false);
+
 
     return (
         <div className="navbar">
@@ -13,28 +13,13 @@ const Header = () => {
             </div>
 
             <div className="navigation">
-                <div className="navigation__presentation"><h2>Présentation</h2></div>
-                <div className="navigation__projects">
-                    <Link to="/projects" ><h2>Mes projets</h2></Link>
-                </div>
-                <div className="navigation__formations"><h2>Mes formations</h2></div>
-                <div className="navigation__contacts"><h2>Contacts</h2></div>
+                <a href='#contacts'><div className="navigation__presentation"><h2>Présentation</h2></div></a>
+                <a href='#projects'><div className="navigation__projects"><h2>Mes projets</h2></div></a>
+                <a href='#formations'><div className="navigation__formations"><h2>Mes formations</h2></div></a>
+                <a href='#jumbotron'><div className="navigation__contacts"><h2>Contacts</h2></div></a>
             </div>
 
-            <div className="navigation--mobile">
-                <button onClick={() => visibleMenu ? setVisibleMenu(false) : setVisibleMenu(true)} className="hamburger">
-                {visibleMenu ?  <HiX className={`menu-logo`} /> : <HiMenu className={`menu-logo`} />}
-                </button>
-                {/* <div className={`hamburger-navigation ${open}`}> */}
-                <div className={ `hamburger-navigation ${ visibleMenu ? "hamburger-navigation--open" : ""}` }>
-                    <div className="presentation"><h2>Présentation</h2></div>
-                    <div className="projects">
-                        <Link to="/projects" ><h2>Mes projets</h2></Link>
-                    </div>
-                    <div className="formations"><h2>Mes formations</h2></div>
-                    <div className="contacts"><h2>Contacts</h2></div>
-                </div>
-            </div>
+            <NavbarMobile />
 
         </div>
     );

@@ -34,7 +34,7 @@ const formationsData: { domain: string, schoolName: string, img: string, desc: s
 const Formations = () => {
     return (
         <>
-            <div className="formations">
+            <div id="formations" className="formations">
                 <div className="formations__title"><h1>Mes formations</h1></div>
                 <div className="formations__cards">
                     {formationsData.map((formation, index) => {

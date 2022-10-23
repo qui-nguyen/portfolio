@@ -2,7 +2,7 @@
     .box {
         @include display-flex;
         flex-direction: column;
-        min-height: 800px;
+        min-height: 700px;
         width: 100%;
         background-color: $backgroundColor1;
         border-radius: 40px;
@@ -11,11 +11,10 @@
         &__content {
             @include display-flex;
             flex-direction: column;
-            margin-top: 70px;
 
             .img {
                 height: 200px;
-                width: 50%;
+                width: 60%;
                 border: solid 5px black;
                 border-radius: 10px;
 
@@ -50,21 +49,9 @@
 @media (max-width: 640px) {
     .card-project {
         .box {
-            min-height: 600px;
-
-            &__header {
-                height: 70px;
-
-                .title {
-                    font-size: 2rem;
-                    font-weight: 800;
-                    color: $mainColor2;
-                    padding-bottom: 20px;
-                }
-            }
+            min-height: 550px;
 
             &__content {
-                margin-top: 40px;
 
                 .img {
                     height: 200px;

@@ -4,11 +4,11 @@ import urlJumbotronImg from '../../assets/images/jumbotron-black.jpg';
 const Jumbotron = () => {
 
     return (
-        <div className="jumbotron">
+        <div id="jumbotron" className="jumbotron">
             
             {/* <div className="jumbotron__img"> */}
-                <img src="/jumbotron-img.jpg" alt="" />
-                <div className="slogan">Développons l’avenir</div>
+                <img src="/jumbotron-img.jpg" style= {{width : "100%"}} alt="" />
+                <div className="slogan"></div>
             {/* </div> */}
             {/* <div className="jumbotron__text">
                 <table>
