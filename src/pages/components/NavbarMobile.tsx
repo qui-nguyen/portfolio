@@ -21,14 +21,14 @@ const NavbarMobile = () => {
         justifyContent: 'flex-end',
         alignItems: 'flex-end',
         height: "80px",
-        marginRight: "20px"
+        marginRight: "5px"
     }
 
     let navMobile;
     if (visibleMenu) {
         navMobile = <div style={isHorizontal ? {display: "none"} : navMobileClose }>
             <button onClick={toogleMenu}>
-                <HiMenu className={`menu-logo`} />
+                <HiMenu className={`menu-logo`} style={{color: "#272729"}}/>
             </button>
         </div>
     } else {
@@ -45,13 +45,14 @@ const NavbarMobile = () => {
                     display: "flex",
                     justifyContent: "space-between",
                     alignItems: "center",
-                    margin: "20px"
+                    margin: "20px",
+                    height: "80px"
                 }}>
                     <div className="personal-logo">
                         <Link to="/" ><div className="logo">QuiN.</div></Link>
                     </div>
                     <button onClick={toogleMenu} className="hamburger">
-                        <HiX className={`menu-logo`} />
+                        <HiX className={`menu-logo`} style={{color: "#272729"}}/>
                     </button>
                 </div>
                 <div style={{
