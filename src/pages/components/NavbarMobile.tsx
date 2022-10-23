@@ -46,7 +46,7 @@ const NavbarMobile = () => {
                     justifyContent: "space-between",
                     alignItems: "center",
                     margin: "20px",
-                    height: "80px"
+                    height: "100px"
                 }}>
                     <div className="personal-logo">
                         <Link to="/" ><div className="logo">QuiN.</div></Link>

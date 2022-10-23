@@ -1,0 +1,56 @@
+[
+    {
+        "name": "everybuddy",
+        "img": "/everybuddy-chat.png",
+        "desc": " L'application mobile permettant de mise en relation du réseau d'Alumnis de la Capsule, grâce à une rechercher par la géolocalisation et une messagerie instantanées",
+        "link": "https://github.com/qui-nguyen",
+        "nameLink": "Github",
+        "logo": "/messages.png",
+        "techno": ["React Native", "Expo", "Socket.io", "Redux", "Express", "MongoDB", "Figma"]
+    },
+    {
+        "name": "Bike Shop",
+        "img": "/bikeshop.png",
+        "desc": "Site e-commerce (hébergé sur Heroku) avec une mécanique de panier et de moyen de payement (Stripe)",
+        "link": "",
+        "nameLink": "Github",
+        "logo": "/basket.png",
+        "techno": ["JavaScript", "EJS", "Express", "MongoDB"]
+    },
+    {
+        "name": "Weather App",
+        "img": "/weatherapp.png",
+        "desc": "Application web permettant d'afficher la météo d'une ville sur une carte interactive en temps réel",
+        "link": "",
+        "nameLink": "Github",
+        "logo": "/snow.png",
+        "techno": ["React", "JavaScript", "Express", "MongoDB", "Heroku"]
+    },
+    {
+        "name": "Morning News",
+        "img": "/morningnews.png",
+        "desc": "Application web qui permet d’afficher les news actualisées et de les sauvegarder en base de données (wishlist) et les lire plus tard",
+        "link": "",
+        "nameLink": "Github",
+        "logo": "/news.png",
+        "techno": ["React", "Redux", "Express", "MongoDB", "Heroku"]
+    },
+    {
+        "name": "My Moviz",
+        "img": "/mymoviz.png",
+        "desc": "Application qui permet de proposer une liste de dernières sorties cinéma et de créer votre propre “whislist”",
+        "link": "",
+        "nameLink": "Github",
+        "logo": "/movie-projector.png",
+        "techno": ["React", "Redux", "Express", "MongoDB", "Heroku"]
+    },
+    {
+        "name": "Loca Pic",
+        "img": "/locapic.png",
+        "desc": "Application mobile qui permet de vous géolocaliser, de suivre l’historique de vos déplacements et de chatter avec l’ensemble des utilisateurs connectés à l’application",
+        "link": "",
+        "nameLink": "Github",
+        "logo": "/logo-loca.png",
+        "techno": ["React Native", "Expo", "Socket.io", "Redux", "Express", "MongoDB"]
+    }
+]
