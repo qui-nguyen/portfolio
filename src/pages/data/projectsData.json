@@ -1,0 +1,65 @@
+[
+    {
+        "name": "KodKodKod",
+        "img": "projects/kodkodkod.png",
+        "desc": "Refonte et maintenace tous les site web de KodKodKod.Studio",
+        "link": "https://kodkodkod.studio/fr/",
+        "nameLink": "kodKodKod",
+        "logo": "projects/UXUI.png",
+        "techno": ["SCSS", "HTML", "Twig", "Symfony"]
+    },
+    {
+        "name": "everybuddy",
+        "img": "projects/everybuddy-chat.png",
+        "desc": " L'application mobile permettant de mise en relation du réseau d'Alumnis de la Capsule, grâce à une rechercher par la géolocalisation et une messagerie instantanées",
+        "link": "https://github.com/qui-nguyen",
+        "nameLink": "Github",
+        "logo": "projects/messages.png",
+        "techno": ["React Native", "Expo", "Socket.io", "Redux", "Express", "MongoDB", "Figma"]
+    },
+    {
+        "name": "Bike Shop",
+        "img": "projects/bikeshop.png",
+        "desc": "Site e-commerce (hébergé sur Heroku) avec une mécanique de panier et de moyen de payement (Stripe)",
+        "link": "https://github.com/qui-nguyen",
+        "nameLink": "Github",
+        "logo": "projects/basket.png",
+        "techno": ["JavaScript", "EJS", "Express", "MongoDB"]
+    },
+    {
+        "name": "Weather App",
+        "img": "projects/weatherapp.png",
+        "desc": "Application web permettant d'afficher la météo d'une ville sur une carte interactive en temps réel",
+        "link": "https://github.com/qui-nguyen",
+        "nameLink": "Github",
+        "logo": "projects/snow.png",
+        "techno": ["React", "JavaScript", "Express", "MongoDB", "Heroku"]
+    },
+    {
+        "name": "Morning News",
+        "img": "projects/morningnews.png",
+        "desc": "Application web qui permet d’afficher les news actualisées et de les sauvegarder en base de données (wishlist) et les lire plus tard",
+        "link": "https://github.com/qui-nguyen",
+        "nameLink": "Github",
+        "logo": "projects/news.png",
+        "techno": ["React", "Redux", "Express", "MongoDB", "Heroku"]
+    },
+    {
+        "name": "My Moviz",
+        "img": "projects/mymoviz.png",
+        "desc": "Application qui permet de proposer une liste de dernières sorties cinéma et de créer votre propre “whislist”",
+        "link": "https://github.com/qui-nguyen",
+        "nameLink": "Github",
+        "logo": "projects/movie-projector.png",
+        "techno": ["React", "Redux", "Express", "MongoDB", "Heroku"]
+    },
+    {
+        "name": "Loca Pic",
+        "img": "projects/locapic.png",
+        "desc": "Application mobile qui permet de vous géolocaliser, de suivre l’historique de vos déplacements et de chatter avec l’ensemble des utilisateurs connectés à l’application",
+        "link": "https://github.com/qui-nguyen",
+        "nameLink": "Github",
+        "logo": "projects/logo-loca.png",
+        "techno": ["React Native", "Expo", "Socket.io", "Redux", "Express", "MongoDB"]
+    }
+]

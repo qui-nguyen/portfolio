@@ -13,7 +13,7 @@
 //     }
 //   }
 
-// All styles ussed by all components 
+// All styles used (by all components) 
 
 @import "utils/variables";
 
@@ -22,6 +22,8 @@
 @import "utils/typography";
 
 @import "utils/responsive";
+
+@import "components/navbarMobile.scss";
 
 @import "components/header.scss";
 
@@ -34,3 +36,9 @@
 @import "components/cardProject.scss";
 
 @import "components/competences.scss";
+
+@import "components/cardFormation.scss";
+
+@import "components/experiences.scss";
+
+@import "components/formations.scss";

@@ -3,21 +3,30 @@
     flex-direction: column;
     color: $titleColor;
     padding: 50px 0px;
+    background-color: $backgroundColor1;
+    margin: 0 -100px;
 
+    @media (max-width: 1280px) {
+        margin: 0;
+    }
+   
     &__title {
+        @include header;
         margin: 0 0 50px;
     }
 
     &__skills {
         @include display-flex($justifyContent: space-evenly);
+        flex-wrap: wrap;
         width: 100%;
 
         img, svg {
             height: 5rem;
             font-size: 5rem;
             @media (max-width: "640px") {
-                height: 3rem;
-                font-size: 3rem;
+                margin: 2rem;
+                height: 7rem;
+                font-size: 7rem;
             }
         }
     }

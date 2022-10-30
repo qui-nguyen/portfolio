@@ -1,0 +1,148 @@
+.card-formation {
+    .box {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        justify-items: center;
+        align-items: center;
+        height: fit-content;
+        margin-bottom: 30px;
+
+        @media (max-width: 1280px) {
+            grid-template-columns: 1fr;
+        }
+
+        &--colored {
+            background-color: #CFA616;
+            border-radius: 20px;
+        }
+
+        &__img {
+            margin-bottom: 20px;
+
+            &--left {
+                grid-column: 1 / span 1;
+
+                @media (max-width: 1280px) {
+                    grid-column: 1 / span 1;
+                    order: 2;
+                }
+            }
+
+            &--right {
+                grid-column: 2 / span 1;
+                order: 1;
+
+                @media (max-width: 1280px) {
+                    grid-column: 1 / span 1;
+                    order: 2;
+                }
+            }
+
+            .img {
+                @include display-flex;
+                height: 100%;
+                width: auto;
+
+                img {
+                    width: 80%;
+                    max-width: 350px;
+                    height: auto;
+                    border-radius: 20px;
+                    box-shadow: 20px 20px 30px rgba(206, 174, 158, 0.2);
+                }
+            }
+        }
+
+        &__content {
+            @include display-flex;
+            flex-direction: column;
+            color: $headerColor2;
+            width: 100%;
+            height: auto;
+            border-radius: 30%;
+
+            .sub-title {
+                color: $mainColor2;
+            }
+
+            .description {
+                color: $subTitleColor;
+            }
+
+            &--left {
+                grid-column: 1 / span 1;
+
+                @media (max-width: 1280px) {
+                    grid-column: 1 / span 1;
+                    order: 1;
+                }
+
+                .content-container {
+                    @include display-flex;
+                    flex-direction: column;
+                    background-color: $backgroundColor1;
+                    height: 150px;
+                    width: 80%;
+                    box-shadow: 20px 20px 80px #624e04;
+                    border-radius: 20px;
+                    margin-bottom: 15px;
+
+                    .title {
+                        margin: 10px;
+
+                        h2 {
+                            line-height: 0;
+                        }
+                    }
+
+                    .sub-title {
+                        h3 {
+                            line-height: 0;
+                        }
+                    }
+                }
+
+            }
+
+            &--right {
+                grid-column: 2 / span 1;
+                order: 1;
+                background-color: $backgroundColor2;
+                color: $headerColor3;
+
+                @media (max-width: 1280px) {
+                    grid-column: 1 / span 1;
+                    order: 1;
+                }
+
+                .content-container {
+                    @include display-flex;
+                    flex-direction: column;
+                    background-color: $backgroundColor2;
+                    height: 150px;
+                    // max-width: 650px;
+                    width: 80%;
+                    box-shadow: 20px 20px 30px rgba(50, 50, 46, 0.2);
+                    border-radius: 20px;
+                    margin-bottom: 15px;
+
+                    @media (max-width: 640px) {}
+
+                    .title {
+                        margin: 10px;
+
+                        h2 {
+                            line-height: 0;
+                        }
+                    }
+
+                    .sub-title {
+                        h3 {
+                            line-height: 0;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

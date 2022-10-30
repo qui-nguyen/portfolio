@@ -11,65 +11,27 @@
 .menu-logo {
     justify-self: end;
     border: none;
-    width: 50px;
-    height: 50px;
+    width: 35px;
+    height: 35px;
 }
 
 .navbar {
     display: grid;
     grid-template-columns: 1fr 5fr;
     font-weight: 900 !important;
+    position: sticky;
+    top: 0;
+    width: 100%;
+    background-color: black;
+    z-index: 99999;
+    height: 120px;
 
     .navigation {
         @include display-flex;
         justify-content: space-around;
 
-        &__projects  {
-            &:hover {
-                scale: 1.1;
-                color: $mainColor1;
-            }
-        }
-
-        @media (max-width: 640px) {
+        @media (max-width: 1024px) {
             display: none;
-        }
-
-        &--mobile {
-            display: none;
-
-            @media (max-width: 640px) {
-                @include display-flex($justifyContent: flex-end);
-                position: relative;
-
-                .hamburger {
-                    border: none;
-                    background-color: $color-secondary;
-                    position: absolute;
-                }
-
-                .hamburger-navigation {
-                    @include absolute-center;
-                    @include display-flex($alignItems: flex-end);
-                    flex-direction: column;
-                    visibility: hidden;
-                    opacity: 0;
-                    transition: display .1s, opacity .5s ease-in;
-
-                    &--open {
-                        visibility: visible;
-                        opacity: 1;
-                        background-color: $color-secondary;
-                        width: 180px;
-                        position: absolute;
-                        margin-right: 0px;
-                    }
-
-                    h2 {
-                        font-size: 20px;
-                    }
-                }
-            }
         }
     }
 
