@@ -1,0 +1,30 @@
+[
+    {
+        "domain": "FullStack JS",
+        "schoolName": "La Capsule",
+        "img": "/formations/lacapsule-batch55.jpg",
+        "desc": "",
+        "year": "2022"
+    },
+    {
+        "domain": "Data Analyst",
+        "schoolName": "Openclassrooms",
+        "img": "/formations/da.png",
+        "desc": "",
+        "year": "2021 - 2022"
+    },     
+    {
+        "domain": "M2 Biochimie",
+        "schoolName": "Université Claude Bernard Lyon 1",
+        "img": "/formations/m2-IBCP.jpg",
+        "desc": "",
+        "year": "2016-2017"
+    },     
+    {
+        "domain": "L3 Biochimie",
+        "schoolName": "Université Claude Bernard Lyon 1",
+        "img": "/formations/l3-UCBL.jpg",
+        "desc": "",
+        "year": "2012-2015"
+    }
+]

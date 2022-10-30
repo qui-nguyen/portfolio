@@ -117,13 +117,9 @@ const Projects = () => {
                                 </SwiperSlide>
                             )
                         })}
-
                     </Swiper>
-
-
-
                 </div>
-                <div className="projects__btn"><div>En savoir plus</div></div>
+                <div className="projects__btn"><a href="https://github.com/qui-nguyen" target="_blank"><div>En savoir plus</div></a>  </div>
             </div>
         </>
     )

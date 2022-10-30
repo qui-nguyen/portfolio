@@ -5,7 +5,7 @@
         justify-items: center;
         align-items: center;
         height: fit-content;
-        padding: 50px 30px;
+        margin-bottom: 30px;
 
         @media (max-width: 1280px) {
             grid-template-columns: 1fr;
@@ -17,6 +17,7 @@
         }
 
         &__img {
+            margin-bottom: 20px;
 
             &--left {
                 grid-column: 1 / span 1;
@@ -44,7 +45,7 @@
 
                 img {
                     width: 80%;
-                    max-width: 600px;
+                    max-width: 350px;
                     height: auto;
                     border-radius: 20px;
                     box-shadow: 20px 20px 30px rgba(206, 174, 158, 0.2);
@@ -58,7 +59,7 @@
             color: $headerColor2;
             width: 100%;
             height: auto;
-            padding-bottom: 50px;
+            border-radius: 30%;
 
             .sub-title {
                 color: $mainColor2;
@@ -80,12 +81,27 @@
                     @include display-flex;
                     flex-direction: column;
                     background-color: $backgroundColor1;
-                    height: 500px;
-                    max-width: 650px;
+                    height: 150px;
                     width: 80%;
-                    box-shadow: 20px 20px 30px $headerColor2;
+                    box-shadow: 20px 20px 80px #624e04;
                     border-radius: 20px;
+                    margin-bottom: 15px;
+
+                    .title {
+                        margin: 10px;
+
+                        h2 {
+                            line-height: 0;
+                        }
+                    }
+
+                    .sub-title {
+                        h3 {
+                            line-height: 0;
+                        }
+                    }
                 }
+
             }
 
             &--right {
@@ -103,11 +119,28 @@
                     @include display-flex;
                     flex-direction: column;
                     background-color: $backgroundColor2;
-                    height: 500px;
-                    max-width: 650px;
+                    height: 150px;
+                    // max-width: 650px;
                     width: 80%;
                     box-shadow: 20px 20px 30px rgba(50, 50, 46, 0.2);
                     border-radius: 20px;
+                    margin-bottom: 15px;
+
+                    @media (max-width: 640px) {}
+
+                    .title {
+                        margin: 10px;
+
+                        h2 {
+                            line-height: 0;
+                        }
+                    }
+
+                    .sub-title {
+                        h3 {
+                            line-height: 0;
+                        }
+                    }
                 }
             }
         }

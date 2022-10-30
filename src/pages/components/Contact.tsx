@@ -2,15 +2,16 @@
 // import { FaLinkedin } from "react-icons/fa";
 // import { Ri24HoursFill } from "react-icons/ri";
 
-const styleLink = {
-    height: "8rem",
-    display: "block"
-}
-
 const styleDivParent = {
     display: "flex",
     justifyContent: "center",
     alignItems: "center",
+    marginTop: "30px"
+}
+
+const styleLink = {
+    height: "8rem",
+    display: "block"
 }
 
 const Contact = () => {

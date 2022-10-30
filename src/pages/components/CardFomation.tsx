@@ -26,8 +26,8 @@ const CardFormation = ({ domain, schoolName, img, desc, year, order }: IProps) =
                 <div className={order % 2 === 0 ? "box__content box__content--left" : "box__content box__content--right"}>
                     <div className="title"><h1>{year}</h1></div>
                     <div className="content-container" data-aos="fade-down" data-aos-duration="500">
-                        <div className="title"><h1>{domain}</h1></div>
-                        <div className="sub-title"><h2>{schoolName}</h2></div>
+                        <div className="title"><h2>{domain}</h2></div>
+                        <div className="sub-title"><h3>{schoolName}</h3></div>
                         <div className="description"><p>{desc}</p></div>
                     </div>
                 </div>
