@@ -1,37 +1,11 @@
-// import { FaGithubSquare } from "react-icons/fa";
-// import { FaLinkedin } from "react-icons/fa";
-// import { Ri24HoursFill } from "react-icons/ri";
-
-const styleDivParent = {
-    display: "flex",
-    justifyContent: "center",
-    alignItems: "center",
-    marginTop: "30px"
-}
-
-const styleLink = {
-    height: "8rem",
-    display: "block"
-}
-
 const Contact = () => {
 
     return (
-        <div id="contact" style={styleDivParent}>
-            <div>
-                <a href="https://github.com/qui-nguyen" style={styleLink}>
-                    {/* <FaGithubSquare style={{ fontSize: "5rem", color: "#FFFFFF", marginRight: "3rem" }} /> */}
-                    <img src="/icon-github.png" alt="icon-gtihub" style={{ height: "6rem", width: "auto", marginRight: "3rem" }} />
-                </a>
+        <div className="contact">
+            <div className="contact__title"><h1>Contact</h1></div>
+            <div className="contact__form">
+                
             </div>
-
-            <div>
-                <a href="https://linkedin.com/in/thanh-qui-nguyen" style={styleLink}>
-                    {/* <FaLinkedin style={{ fontSize: "5rem", color: "#0e76a8", backgroundColor:"#FFFFFF" }} /> */}
-                    <img src="/icon-linkedin.png" alt="icon-linkedin" style={{ height: "6rem", width: "auto" }} />
-                </a>
-            </div>
-
         </div>
     )
 }

@@ -1,6 +1,6 @@
 import Header from './components/Header';
 import Jumbotron from './components/Jumbotron';
-import Contact from './components/Contact';
+import SocialNetwork from './components/SocialNetwork';
 import Presentation from './components/Presentation'
 
 const ProjectsPage = () => {
@@ -8,7 +8,7 @@ const ProjectsPage = () => {
         <div className="Header">
             <Header></Header>
             <Jumbotron></Jumbotron>
-            <Contact></Contact>
+            <SocialNetwork></SocialNetwork>
             <Presentation></Presentation>
             <div>Google con heo</div>
         </div>)
