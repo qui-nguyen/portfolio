@@ -1,10 +1,10 @@
 [
     {
-        "name": "KodKodKod",
+        "name": "KodKodKod.Studio",
         "img": "projects/kodkodkod.png",
-        "desc": "Refonte et maintenace tous les site web de KodKodKod.Studio",
+        "desc": "Refonte et création 8 pages du site web de l'entrepise (y compris les formulaires de contact)",
         "link": "https://kodkodkod.studio/fr/",
-        "nameLink": "kodKodKod",
+        "nameLink": "KodKodKod.Studio",
         "logo": "projects/UXUI.png",
         "techno": ["SCSS", "HTML", "Twig", "Symfony"]
     },

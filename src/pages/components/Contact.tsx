@@ -17,7 +17,7 @@ const styleLink = {
 const Contact = () => {
 
     return (
-        <div id="contacts" style={styleDivParent}>
+        <div id="contact" style={styleDivParent}>
             <div>
                 <a href="https://github.com/qui-nguyen" style={styleLink}>
                     {/* <FaGithubSquare style={{ fontSize: "5rem", color: "#FFFFFF", marginRight: "3rem" }} /> */}

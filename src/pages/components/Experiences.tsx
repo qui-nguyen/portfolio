@@ -4,16 +4,16 @@ import 'react-vertical-timeline-component/style.min.css';
 
 const experiencesData: { domain: string, companyName: string, companyAdress: string, position: string, desc: string, date: string, imgIcon: string }[] = [
     {
-        domain: "", companyName: "La Capsule", companyAdress: "Lyon-France", position: "Teacher Assistant", desc: "Donner les aides aux futurs développeurs sur place et à distance (débugger leurs codes, réexpliquer les concepts vus pendant la formation...)", date: "10/2022", imgIcon: "/experiences/laptop.png"
+        domain: "", companyName: "La Capsule", companyAdress: "Lyon-France", position: "Teacher Assistant", desc: "Donner les aides aux futurs développeurs sur place et à distance (débugger leurs codes, réexpliquer les concepts vus pendant la formation...)", date: "10-11/2022", imgIcon: "/experiences/laptop.png"
     },
     {
-        domain: "Front-end", companyName: "KodKodKodStudio", companyAdress: "Lyon-France", position: "Stage", desc: "Refonte tous les sites web de KodKodKod Studio (ex: https://kodkodkod.studio/fr/)", date: "09/2022", imgIcon: "/experiences/laptop.png"
+        domain: "Front-end", companyName: "KodKodKodStudio", companyAdress: "Lyon-France", position: "Stage", desc: "Refonte tous les sites web de KodKodKod Studio (ex: https://kodkodkod.studio/fr/)", date: "09-11/2022", imgIcon: "/experiences/laptop.png"
     },
     {
         domain: "", companyName: "Sushishop", companyAdress: "Lyon-France", position: "Sushiman", desc: "Préparation des recettes japonaises en tant que sushiman confirmé", date: "2020-2022", imgIcon: "/experiences/kawaii-sushi.png"
     },
     {
-        domain: "Biochimie", companyName: "IBCP", companyAdress: "Lyon-France", position: "Stage", desc: "Production et purification de la protéine (de laminine LG4/5)", date: "2017", imgIcon: "/experiences/microscope.png"
+        domain: "Biochimie", companyName: "IBCP", companyAdress: "Lyon-France", position: "Stage", desc: "Production et purification de la protéine (de laminine LG4/5)", date: "01-06/2017", imgIcon: "/experiences/microscope.png"
     }
 ]
 
