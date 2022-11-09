@@ -80,10 +80,11 @@
                 .content-container {
                     @include display-flex;
                     flex-direction: column;
-                    background-color: $backgroundColor1;
+                    background-color: $backgroundColor3;
                     height: 150px;
                     width: 80%;
-                    box-shadow: 20px 20px 80px #624e04;
+                    // box-shadow: 20px 20px 80px #624e04;
+                    box-shadow: 20px 20px 30px rgba(116, 116, 105, 0.2);
                     border-radius: 20px;
                     margin-bottom: 15px;
 
