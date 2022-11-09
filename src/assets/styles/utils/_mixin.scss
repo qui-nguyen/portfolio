@@ -67,17 +67,17 @@
     @include display-flex;
     width: fit-content;
     height: 35px;
-    padding: 5px 20px;
+    padding: 20px 20px;
     color: $btnTextColor;
     background-color: $mainColor1;
     border: none;
     font: normal normal 500 1.5rem Poppins;
     box-shadow: 0px 23.5167px 48.9931px rgba(178, 64, 93, 0.1);
     border-radius: 10px;
-    cursor: pointer;
+    cursor: pointer !important;
 
     @media (max-width: 640px) {
-        height: 40px;
+        height: 10px;
     }
 }
 

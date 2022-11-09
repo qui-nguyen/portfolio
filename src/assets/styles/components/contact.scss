@@ -11,6 +11,75 @@
 
     &__title {
         @include header;
-        margin: 0 0 50px;
+    }
+
+    &__form {
+        @include display-flex;
+        width: 150%;
+        height: 850px;
+        // background-image: url(../../../../public/background.png);
+
+        .form {
+            @include display-flex;
+            flex-direction: column;
+            width: 800px;
+
+            h3 {
+                color: white;
+            }
+
+            &__content {
+                @include display-flex;
+                flex-direction: column;
+                width: 100%;
+                margin: 50px 0;
+                padding: 20px 0;
+                border-radius: 10px;
+                background-image: linear-gradient(to right top,
+                        rgba(230, 216, 238, 0.5),
+                        rgba(51, 28, 114, 0.5),
+                        rgba(28, 40, 112, 0.5),
+                        rgba(10, 76, 168, 0.5),
+                        rgba(4, 109, 201, 0.5),
+                        rgba(76, 106, 185, 0.5),
+                        rgba(97, 97, 145, 0.5),
+                        rgba(136, 122, 174, 0.5),
+                        rgba(162, 81, 142, 0.5),
+                        rgba(188, 89, 116, 0.5),
+                        rgba(201, 112, 92, 0.5),
+                        rgba(231, 154, 39, 0.5));
+
+                // background-color: rgba($color: rgb(255, 255, 255), $alpha: 1);
+                .form-group {
+                    @include display-flex;
+                    width: 80%;
+                    margin: 10px 0;
+                    input,
+                    textarea {
+                        width: 500px;
+                        font-family: 'Poppins', 'Open Sans', 'Montserrat', 'Lora';
+                        font-size: 1.5rem;
+                        padding: 10px;
+                        opacity: 1;
+                        border: none;
+                    }
+                }
+            }
+
+            &__btn {
+                @include btn-style;
+                &:hover,
+                &:focus {
+                    scale: 1.1;
+                }
+                button {
+                    background-color: transparent;
+                    border: none;
+                    h3 {
+                        color: $btnTextColor;
+                    }
+                }
+            }
+        }
     }
 }

@@ -1,10 +1,7 @@
 import { Link } from "react-router-dom";
 import NavbarMobile from "./NavbarMobile";
 
-import { RefObject, useRef } from "react";
-
 const Header = () => {
-
 
     return (
         <div className="navbar">
@@ -17,7 +14,7 @@ const Header = () => {
                 <a href="#projects"><div className="navigation__item"><h2>Projets</h2></div></a>
                 <a href="#formations"><div className="navigation__item"><h2>Formations</h2></div></a>
                 <a href="#experiences"><div className="navigation__item"><h2>Expériences</h2></div></a>
-                <a href="#jumbotron"><div className="navigation__item"><h2>Contact</h2></div></a>
+                <a href="#contact"><div className="navigation__item"><h2>Contact</h2></div></a>
             </div>
 
             <NavbarMobile />

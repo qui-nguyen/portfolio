@@ -1,21 +1,10 @@
-// Color palette
-
-$color-primary-1: #FFCA28; // #E9204F;
-$color-primary-2: #0A0F1B;
-$color-secondary : #FFFFFF;
-$color-ternary : #321D1D;
-$color-quaternary : #757d9a;
-$color-quinary : #F6F6F6;
-
 // Variable colors
 
-$mainColor1: $color-primary-1;
+$mainColor1: #FFCA28;
 $mainColor2: #FFFFFF;
-$btnTextColor: $color-primary-2;
-$titleColor: $color-ternary;
-$subTitleColor: $color-quaternary;
-$backgroundColor1:  #0A0F1B;
-$backgroundColor2: $color-secondary;
+$btnTextColor: #0A0F1B;
+$titleColor:  #321D1D;
+$subTitleColor: #757d9a;
 
 $headerColor: #FFFFFF;
 $headerColor2: #CFA616;
@@ -24,6 +13,7 @@ $textColor: #FFFFFF;
 $btnColor: #FFCA28;
 $backgroundColor1:  #272729;
 $backgroundColor2:  #CFA616;
+$backgroundColor3:  #0A0F1B;
 
 
 // Font Types

@@ -67,7 +67,7 @@ const NavbarMobile = () => {
                     <a href="#projects" onClick={toogleMenu} style={{ color: "#FFF" }}><h1>Projets</h1></a>
                     <a href="#experiences" onClick={toogleMenu} style={{ color: "#FFF" }}><h1>Expériences</h1></a>
                     <a href="#formations" onClick={toogleMenu} style={{ color: "#FFF" }}><h1>Formations</h1></a>
-                    <a href="#jumbotron" onClick={toogleMenu} style={{ color: "#FFF" }}><h1>Contact</h1></a>
+                    <a href="#contact" onClick={toogleMenu} style={{ color: "#FFF" }}><h1>Contact</h1></a>
                 </div>
             </div>
     }
