@@ -8,7 +8,7 @@ interface IProps {
 const Modal = ({ isVisible, toggleModal }: IProps) => {
 
     return (
-    //    isVisible ?
+       isVisible ?
             <div className="modal" >
                 <div className="modal__close">
                     <h3>Fermer</h3>
@@ -22,7 +22,7 @@ const Modal = ({ isVisible, toggleModal }: IProps) => {
                     <h2>A très bientôt !</h2>
                 </div>
             </div>
-        //    : null
+           : null
     )
 
 }
