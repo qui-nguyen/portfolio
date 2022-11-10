@@ -1,23 +1,25 @@
 .modal {
     @include display-flex;
     flex-direction: column;
-    height: 95vh;
+    height: 100vh;
     background-color: #000;
     position: fixed;
     bottom: 0;
-    width: 1280px;
+    width: 1400px;
     z-index: 999999;
-
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
     @media (max-width: 1280px) {
         width: 100%;
         height: 100vh;
-        margin-left: -18px;
     }
 
     &__text {
         @media (max-width: 1280px) {
             width: 60vw;
-            margin-top: 50px
+            margin-top: 70px
         }
 
         h2 {
