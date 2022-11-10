@@ -7,7 +7,7 @@ const experiencesData: { domain: string, companyName: string, companyAdress: str
         domain: "", companyName: "La Capsule", companyAdress: "Lyon-France", position: "Teacher Assistant", desc: "Donner les aides aux futurs développeurs sur place et à distance (débugger leurs codes, réexpliquer les concepts vus pendant la formation...)", date: "10-11/2022", imgIcon: "/experiences/laptop.png"
     },
     {
-        domain: "Front-end", companyName: "KodKodKodStudio", companyAdress: "Lyon-France", position: "Stage", desc: "Refonte les sites web de KodKodKod Studio (ex: https://kodkodkod.studio/fr/)", date: "09-11/2022", imgIcon: "/experiences/laptop.png"
+        domain: "Front-end", companyName: "KodKodKodStudio", companyAdress: "Lyon-France", position: "Stage", desc: "Refonte les sites web de KodKodKod Studio (https://kodkodkod.studio/fr/)", date: "09-11/2022", imgIcon: "/experiences/laptop.png"
     },
     {
         domain: "", companyName: "Sushishop", companyAdress: "Lyon-France", position: "Sushiman", desc: "Préparation des recettes japonaises en tant que sushiman confirmé", date: "2020-2022", imgIcon: "/experiences/kawaii-sushi.png"

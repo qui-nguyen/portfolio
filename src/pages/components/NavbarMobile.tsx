@@ -7,7 +7,7 @@ import { useMediaQuery } from "react-responsive";
 const NavbarMobile = () => {
 
     const isHorizontal = useMediaQuery({
-        query: "(min-width: 1180px)"
+        query: "(min-width: 1080px)"
       });
 
     const [visibleMenu, setVisibleMenu] = useState(true);
