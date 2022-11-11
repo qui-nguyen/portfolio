@@ -3,7 +3,8 @@
     flex-direction: column;
     color: $titleColor;
     padding: 50px 0px;
-    width: 100%;;
+    width: 100%;
+    overflow-x: hidden;
 
     &__title {
         @include header;
