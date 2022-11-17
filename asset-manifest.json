@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/static/css/main.52e3d5ca.css",
-    "main.js": "/static/js/main.9ed26a8c.js",
+    "main.css": "/static/css/main.000f1d60.css",
+    "main.js": "/static/js/main.d170e409.js",
     "static/js/787.debbd69d.chunk.js": "/static/js/787.debbd69d.chunk.js",
     "static/media/Portrait_Qui_4x4_smaller.jpg": "/static/media/Portrait_Qui_4x4_smaller.479d2aedd43a699aae51.jpg",
     "static/media/logo-react-animated.svg": "/static/media/logo-react-animated.60ba37430e47dda8c6825b0fd9b1b842.svg",
     "index.html": "/index.html",
-    "main.52e3d5ca.css.map": "/static/css/main.52e3d5ca.css.map",
-    "main.9ed26a8c.js.map": "/static/js/main.9ed26a8c.js.map",
+    "main.000f1d60.css.map": "/static/css/main.000f1d60.css.map",
+    "main.d170e409.js.map": "/static/js/main.d170e409.js.map",
     "787.debbd69d.chunk.js.map": "/static/js/787.debbd69d.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.52e3d5ca.css",
-    "static/js/main.9ed26a8c.js"
+    "static/css/main.000f1d60.css",
+    "static/js/main.d170e409.js"
   ]
 }
