@@ -42,6 +42,7 @@ const Formations = () => {
                     {formationsData.map((formation, index) => {
                         return (
                             <CardFormation
+                                key={`${index}${formation.domain}`}
                                 domain={formation.domain}
                                 schoolName={formation.schoolName}
                                 img={formation.img}

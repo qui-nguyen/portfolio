@@ -30,6 +30,7 @@ const Experiences = () => {
                             let icon = <img src={experience.imgIcon} alt={experience.imgIcon} style={{ width: "85%", height: "auto", marginLeft: "7.5%", marginTop: "7.5%" }} />;
                             return (
                                 <VerticalTimelineElement
+                                    key={`${index}${experience.position}`}
                                     className="vertical-timeline-element--work"
                                     // contentStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
                                     contentArrowStyle={{ borderRight: '7px solid #CFA616' }}

@@ -13,13 +13,8 @@
         display: contents;
     }
 
-    &__btn {
+    &__btns {
       @include display-flex;
-      margin: 2% 0;
-
-      div {
-        @include btn-style;
-      }
     }
 }
 

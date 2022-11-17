@@ -58,30 +58,34 @@ SwiperCore.use([EffectCoverflow, Pagination, Navigation, Autoplay]);
 
 const Projects = () => {
 
-      const isDesktop = useMediaQuery({
+    const isDesktop = useMediaQuery({
         query: "(min-width: 1600px)"
-      });
+    });
 
-      const isHorizontal = useMediaQuery({
+    const isHorizontal = useMediaQuery({
         query: "(min-width: 1028px)"
-      });
-    
-      const isTablet = useMediaQuery({
+    });
+
+    const isTablet = useMediaQuery({
         query: "(min-width: 768px)"
-      });
-    
-      const isMobile = useMediaQuery({
-        query: "(min-width: 640px)"
-      });
-    
-      const isPortrait = useMediaQuery({
-        query: "(orientation: portrait)"
-      });
-    
-      const isRetina = useMediaQuery({
-        query: "(min-resolution: 300dpi)"
-      });
-    
+    });
+
+    // const isMobile = useMediaQuery({
+    //   query: "(min-width: 640px)"
+    // });
+
+    // const isPortrait = useMediaQuery({
+    //   query: "(orientation: portrait)"
+    // });
+
+    // const isRetina = useMediaQuery({
+    //   query: "(min-resolution: 300dpi)"
+    // });
+    const styleLink = {
+        height: "8rem",
+        display: "block"
+    }
+
     return (
         <>
             <div id="projects" className="projects">
@@ -101,11 +105,11 @@ const Projects = () => {
                         modules={[Autoplay, Pagination, Navigation]}
                         className="mySwiper"
                     >
-                        {projectsData.map((project) => {
+                        {projectsData.map((project, index) => {
                             return (
-                                <SwiperSlide>
+                                <SwiperSlide
+                                    key={`${index}${project.name}`}>
                                     <CardProject
-                                        key={project.name}
                                         name={project.name}
                                         img={project.img}
                                         desc={project.desc}
@@ -119,7 +123,15 @@ const Projects = () => {
                         })}
                     </Swiper>
                 </div>
-                <div className="projects__btn"><a href="https://github.com/qui-nguyen" target="_blank"><div>En savoir plus</div></a>  </div>
+                <div className="projects__btns"><h3>En savoir plus</h3></div>
+                <div className="projects__btns">
+                    <a href="https://github.com/qui-nguyen" style={styleLink}>
+                        <img src="/icon-github.png" alt="icon-gtihub" style={{ height: "5rem", width: "auto", marginRight: "1rem" }} />
+                    </a>
+                    <a href="https://www.youtube.com/playlist?list=PLb3_yu1WCP1xB91Gt7dnOgrSm7kzJZ-D1" style={styleLink}>
+                        <img src="projects/icon-youtube.png" alt="icon-youtube" style={{ height: "5rem", width: "auto" }} />
+                    </a>
+                </div>
             </div>
         </>
     )

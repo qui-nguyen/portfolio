@@ -21,8 +21,8 @@
         "name": "Bike Shop",
         "img": "projects/bikeshop.png",
         "desc": "Site e-commerce (hébergé sur Heroku) avec une mécanique de panier et de moyen de payement (Stripe)",
-        "link": "https://github.com/qui-nguyen",
-        "nameLink": "Github",
+        "link": "https://stormy-everglades-94002.herokuapp.com/",
+        "nameLink": "Bike Shop",
         "logo": "projects/basket.png",
         "techno": ["JavaScript", "EJS", "Express", "MongoDB"]
     },
@@ -30,8 +30,8 @@
         "name": "Weather App",
         "img": "projects/weatherapp.png",
         "desc": "Application web permettant d'afficher la météo d'une ville sur une carte interactive en temps réel",
-        "link": "https://github.com/qui-nguyen",
-        "nameLink": "Github",
+        "link": "https://weather-00.herokuapp.com/",
+        "nameLink": "Weather App",
         "logo": "projects/snow.png",
         "techno": ["React", "JavaScript", "Express", "MongoDB", "Heroku"]
     },
@@ -39,8 +39,8 @@
         "name": "Morning News",
         "img": "projects/morningnews.png",
         "desc": "Application web qui permet d’afficher les news actualisées et de les sauvegarder en base de données (wishlist) et les lire plus tard",
-        "link": "https://github.com/qui-nguyen",
-        "nameLink": "Github",
+        "link": "https://morningnews00.herokuapp.com/",
+        "nameLink": "Morning News",
         "logo": "projects/news.png",
         "techno": ["React", "Redux", "Express", "MongoDB", "Heroku"]
     },
@@ -48,8 +48,8 @@
         "name": "My Moviz",
         "img": "projects/mymoviz.png",
         "desc": "Application qui permet de proposer une liste de dernières sorties cinéma et de créer votre propre “whislist”",
-        "link": "https://github.com/qui-nguyen",
-        "nameLink": "Github",
+        "link": "https://mymoviz00.herokuapp.com/",
+        "nameLink": "My Moviz",
         "logo": "projects/movie-projector.png",
         "techno": ["React", "Redux", "Express", "MongoDB", "Heroku"]
     },

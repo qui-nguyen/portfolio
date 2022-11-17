@@ -54,7 +54,7 @@ const Contact = () => {
                 <div className="contact__title"><h1>Contact</h1></div>
                 <div className="contact__form">
                     <form className="form" ref={form} onSubmit={handleSubmit}>
-                        <h3 className="form__tilte">On se discute ?</h3>
+                        <h3 className="form__tilte">On discute ?</h3>
                         <div className="form__content">
                             <div className="form-group">
                                 <input
