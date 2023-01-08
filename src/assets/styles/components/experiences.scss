@@ -32,6 +32,9 @@
                 color: $titleColor;
                 margin: 0;
             }
+            @media (max-width: 640px) {
+                font-size: 1.875rem !important;
+            }
         }
     }
 }

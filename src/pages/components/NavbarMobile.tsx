@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
-import { HiMenu, HiX } from "react-icons/hi";
+// import { HiMenu, HiX } from "react-icons/hi";
+import MenuButton from '../capsules/MenuButton';
 
 import { useMediaQuery } from "react-responsive";
 
@@ -8,13 +9,11 @@ const NavbarMobile = () => {
 
     const isHorizontal = useMediaQuery({
         query: "(min-width: 1080px)"
-      });
+    });
 
     const [visibleMenu, setVisibleMenu] = useState(true);
 
-    const toogleMenu = () => {
-        visibleMenu ? setVisibleMenu(false) : setVisibleMenu(true);
-    };
+    const toogleMenu = () => { setVisibleMenu(!visibleMenu) };
 
     const navMobileClose = {
         display: 'flex',
@@ -26,10 +25,10 @@ const NavbarMobile = () => {
 
     let navMobile;
     if (visibleMenu) {
-        navMobile = <div style={isHorizontal ? {display: "none"} : navMobileClose }>
-            <button onClick={toogleMenu}>
-                <HiMenu className={`menu-logo`} style={{color: "#272729"}}/>
-            </button>
+        navMobile = <div style={isHorizontal ? { display: "none" } : navMobileClose}>
+            <div onClick={toogleMenu}>
+                <MenuButton menuClose={true}/>
+            </div>
         </div>
     } else {
         navMobile =
@@ -51,9 +50,9 @@ const NavbarMobile = () => {
                     <div className="personal-logo">
                         <Link to="/" ><div className="logo">QuiN.</div></Link>
                     </div>
-                    <button onClick={toogleMenu} className="hamburger">
-                        <HiX className={`menu-logo`} style={{color: "#272729"}}/>
-                    </button>
+                    <div onClick={toogleMenu} className="hamburger">
+                        <MenuButton menuClose={false}/>
+                    </div>
                 </div>
                 <div style={{
                     display: "flex",

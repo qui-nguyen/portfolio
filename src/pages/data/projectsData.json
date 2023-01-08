@@ -21,7 +21,7 @@
         "name": "Bike Shop",
         "img": "projects/bikeshop.png",
         "desc": "Site e-commerce (hébergé sur Heroku) avec une mécanique de panier et de moyen de payement (Stripe)",
-        "link": "https://stormy-everglades-94002.herokuapp.com/",
+        "link": "https://youtu.be/W6rSbMUcpHo",
         "nameLink": "Bike Shop",
         "logo": "projects/basket.png",
         "techno": ["JavaScript", "EJS", "Express", "MongoDB"]
@@ -30,7 +30,7 @@
         "name": "Weather App",
         "img": "projects/weatherapp.png",
         "desc": "Application web permettant d'afficher la météo d'une ville sur une carte interactive en temps réel",
-        "link": "https://weather-00.herokuapp.com/",
+        "link": "https://youtu.be/s-W8MsTo78A",
         "nameLink": "Weather App",
         "logo": "projects/snow.png",
         "techno": ["React", "JavaScript", "Express", "MongoDB", "Heroku"]
@@ -39,7 +39,7 @@
         "name": "Morning News",
         "img": "projects/morningnews.png",
         "desc": "Application web qui permet d’afficher les news actualisées et de les sauvegarder en base de données (wishlist) et les lire plus tard",
-        "link": "https://morningnews00.herokuapp.com/",
+        "link": "https://youtu.be/fKzrdTkOt48",
         "nameLink": "Morning News",
         "logo": "projects/news.png",
         "techno": ["React", "Redux", "Express", "MongoDB", "Heroku"]
@@ -48,7 +48,7 @@
         "name": "My Moviz",
         "img": "projects/mymoviz.png",
         "desc": "Application qui permet de proposer une liste de dernières sorties cinéma et de créer votre propre “whislist”",
-        "link": "https://mymoviz00.herokuapp.com/",
+        "link": "https://youtu.be/_YvwbJi01gI",
         "nameLink": "My Moviz",
         "logo": "projects/movie-projector.png",
         "techno": ["React", "Redux", "Express", "MongoDB", "Heroku"]

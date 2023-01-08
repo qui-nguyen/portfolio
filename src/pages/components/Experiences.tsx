@@ -2,18 +2,24 @@ import { VerticalTimeline, VerticalTimelineElement } from 'react-vertical-timeli
 import 'react-vertical-timeline-component/style.min.css';
 
 
-const experiencesData: { domain: string, companyName: string, companyAdress: string, position: string, desc: string, date: string, imgIcon: string }[] = [
+const experiencesData: { domain: string, companyName: string, companyAdress: string, position: string, desc: string[], date: string, imgIcon: string }[] = [
     {
-        domain: "", companyName: "La Capsule", companyAdress: "Lyon-France", position: "Teacher Assistant", desc: "Donner les aides aux futurs développeurs sur place et à distance (débugger leurs codes, réexpliquer les concepts vus pendant la formation...)", date: "10-11/2022", imgIcon: "/experiences/laptop.png"
+        domain: "Front-end", companyName: "KodKodKodStudio", companyAdress: "Lyon-France", position: "Stage",
+        desc: ["•	Refonte tous les sites web de l'entreprise (8 pages)",
+            "•	Mettre en place de nouveaux formulaires de contact pour améliorer la communication avec les clients",
+            "•	Maintenir les sites Web de clients côté front-end.",
+            "•	Améliorer la partie front-end d'une application web pour rendre l'interface utilisateur plus intuitive et facile à utiliser."],
+        date: "09/2022-03/2023",
+        imgIcon: "/experiences/laptop.png"
     },
     {
-        domain: "Front-end", companyName: "KodKodKodStudio", companyAdress: "Lyon-France", position: "Stage", desc: "Refonte les sites web de KodKodKod Studio (https://kodkodkod.studio/fr/)", date: "09-11/2022", imgIcon: "/experiences/laptop.png"
+        domain: "", companyName: "La Capsule", companyAdress: "Lyon-France", position: "Teacher Assistant", desc: ["Aider les futurs développeurs en leur fournissant de l'aide sur place et à distance (déboguer leurs codes, expliquer à nouveau les concepts vus pendant la formation, etc.)"], date: "10-11/2022", imgIcon: "/experiences/laptop.png"
     },
     {
-        domain: "", companyName: "Sushishop", companyAdress: "Lyon-France", position: "Sushiman", desc: "Préparation des recettes japonaises en tant que sushiman confirmé", date: "2020-2022", imgIcon: "/experiences/kawaii-sushi.png"
+        domain: "", companyName: "Sushishop", companyAdress: "Lyon-France", position: "Sushiman", desc: ["Préparation des recettes japonaises en tant que sushiman confirmé"], date: "2020-2022", imgIcon: "/experiences/kawaii-sushi.png"
     },
     {
-        domain: "Biochimie", companyName: "IBCP", companyAdress: "Lyon-France", position: "Stage", desc: "Production et purification de la protéine (de laminine LG4/5)", date: "01-06/2017", imgIcon: "/experiences/microscope.png"
+        domain: "Biochimie", companyName: "IBCP", companyAdress: "Lyon-France", position: "Stage", desc: ["Production et purification de la protéine (de laminine LG4/5)"], date: "01-06/2017", imgIcon: "/experiences/microscope.png"
     }
 ]
 
@@ -44,7 +50,9 @@ const Experiences = () => {
                                         <h2 className="vertical-timeline-element-title">{experience.position}{experience.domain ? ` - ${experience.domain}` : ''}</h2>
                                         <h3 className="vertical-timeline-element-subtitle">{experience.companyName}</h3>
                                         <h3 className="vertical-timeline-element-subtitle">{experience.companyAdress}</h3>
-                                        <p>{experience.desc}</p>
+                                        {(experience.desc).map((d, i) => {
+                                            return <p key={`${i}${d}`}>{d}</p>
+                                        })}
                                     </div>
 
                                 </VerticalTimelineElement>
