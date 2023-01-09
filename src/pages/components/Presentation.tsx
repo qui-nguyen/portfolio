@@ -14,12 +14,12 @@ const Presentation = () => {
                 <div className="presentation__sub-title">
                     <p>
                         <RiDoubleQuotesL className="quote-icon" />
-                        Je suis actuellement en stage de 6 mois en tant que développeur junior en front-end dans un studio international spécialisé dans le développement de sites.&nbsp;
+                        Je suis actuellement en stage de 6 mois en tant que développeur junior en front-end dans un studio international spécialisé dans le développement de sites web.&nbsp;
                         Au cours de cette expérience, j'ai pu mettre en pratique mes connaissances en programmation HTML, CSS et JavaScript, ainsi que mes compétences en utilisation de frameworks tels que React.&nbsp;
                         J'ai également eu l'opportunité de travailler avec une équipe internationale, ce qui m'a permis de développer de nouvelles compétences.
                     </p>
                     <p>
-                        Motivée à poursuivre mon développement en tant que développeur front-end, je suis à la recherche d'une opportunité de travail qui me permettra de mettre en pratique mes compétences et de continuer à apprendre et à me développer professionnellement.&nbsp;
+                        Motivée à poursuivre mon développement en tant que développeuse front-end, je suis à la recherche d'une opportunité de travail qui me permettra de mettre en pratique mes compétences et de continuer à apprendre et à me développer professionnellement.&nbsp;
                         Je suis persuadée que mon expérience de stage et mes compétences en développement web me préparent à relever de nouveaux défis et à apporter une contribution positive à une équipe de développement.
                         <RiDoubleQuotesR className="quote-icon" />
                     </p>
