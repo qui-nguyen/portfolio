@@ -6,9 +6,6 @@
         justify-content: center;
     }
 
-    @media (max-width: 640px) {
-        margin-left: 39px;
-    }
 
     .logo {
         @include display-flex;
@@ -48,7 +45,7 @@
         max-width: 1180px;
 
         @media (max-width: 640px) {
-            grid-template-columns: 1fr 1fr;
+            grid-template-columns: 1fr 2fr;
         }
 
         .navigation {
