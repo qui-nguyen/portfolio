@@ -16,8 +16,8 @@ const HomePage = () => {
         <>
             <Header></Header>
             <Jumbotron></Jumbotron>
-            <SocialNetwork></SocialNetwork>
             <Presentation></Presentation>
+            <SocialNetwork></SocialNetwork>
             <Projects></Projects>
             <Competences></Competences>
             <Experiences></Experiences>

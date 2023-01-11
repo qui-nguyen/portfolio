@@ -1,23 +1,43 @@
 .wrapper {
-    background-color: $backgroundColor1;
+    @include display-flex;
     height: fit-content;
-    margin-top: 50px;
+    background-image: url('../../../../public/jumbotron_bg.jpg');
+    min-height: 100vh;
+    width: 100vw;
+    max-width: 100vw;
+    margin-left: calc((1180px - 101vw)/2);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 100%;
+    background-attachment: fixed;
 
-    @media (max-width: 1280px) {
-        margin-top: 0;
+    @media (max-width: 1180px) {
+        margin-left: -18px;
     }
+
+    @media (max-width: 640px) {
+       height: 200vh;
+    }
+
 
     .presentation {
         @include display-flex($justifyContent: space-around);
+        max-width: 100vw;
         flex-direction: column;
         padding: 50px 200px;
+        background-color: #0000008d;
+        margin-left: 0;
+        margin-right: 0;
+        height: 100vh;
+        width: 100vw;
 
-        @media (max-width: 1280px) {
+        @media (max-width: 1180px) {
             padding: 50px 50px;
         }
 
         @media (max-width: 640px) {
             padding: 20px 20px;
+            height: 200vh;
         }
 
         &__img {
@@ -39,6 +59,7 @@
 
         &__sub-title {
             display: inline-block;
+            width: 80%;
 
             .quote-icon {
                 color: $mainColor1;
@@ -76,12 +97,12 @@
 
 @keyframes typing {
     from {
-      width: 0
+        width: 0
     }
-  }
-      
-  @keyframes blink {
+}
+
+@keyframes blink {
     50% {
-      border-color: transparent
+        border-color: transparent
     }
-  }
+}

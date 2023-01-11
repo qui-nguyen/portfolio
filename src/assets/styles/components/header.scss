@@ -2,10 +2,19 @@
     @include display-flex;
     justify-content: flex-start;
 
+    @media (max-width: 1180px) {
+        justify-content: center;
+    }
+
+    @media (max-width: 640px) {
+        margin-left: 39px;
+    }
+
     .logo {
         @include display-flex;
         @include personal-logo;
     }
+
 }
 
 .menu-logo {
@@ -15,24 +24,40 @@
     height: 35px;
 }
 
+
 .navbar {
-    display: grid;
-    grid-template-columns: 1fr 5fr;
-    font-weight: 900 !important;
+    @include display-flex;
     position: sticky;
     top: 0;
-    width: 100%;
+    width: 100vw;
     background-color: #00000066;
     z-index: 99999;
     height: 120px;
+    margin-left: calc((1180px - 101vw)/2);
 
-    .navigation {
-        @include display-flex;
-        justify-content: space-around;
-
-        @media (max-width: 1024px) {
-            display: none;
-        }
+    @media (max-width: 1180px) {
+        margin-left: -18px;
     }
 
+    .navbar-container {
+        display: grid;
+        grid-template-columns: 1fr 5fr;
+        font-weight: 900 !important;
+        z-index: 99999;
+        width: 100%;
+        max-width: 1180px;
+
+        @media (max-width: 640px) {
+            grid-template-columns: 1fr 1fr;
+        }
+
+        .navigation {
+            @include display-flex;
+            justify-content: space-around;
+
+            @media (max-width: 1024px) {
+                display: none;
+            }
+        }
+    }
 }

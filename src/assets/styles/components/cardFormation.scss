@@ -7,7 +7,7 @@
         height: fit-content;
         margin-bottom: 30px;
 
-        @media (max-width: 1280px) {
+        @media (max-width: 1180px) {
             grid-template-columns: 1fr;
         }
 
@@ -22,7 +22,7 @@
             &--left {
                 grid-column: 1 / span 1;
 
-                @media (max-width: 1280px) {
+                @media (max-width: 1180px) {
                     grid-column: 1 / span 1;
                     order: 2;
                 }
@@ -32,7 +32,7 @@
                 grid-column: 2 / span 1;
                 order: 1;
 
-                @media (max-width: 1280px) {
+                @media (max-width: 1180px) {
                     grid-column: 1 / span 1;
                     order: 2;
                 }
@@ -72,7 +72,7 @@
             &--left {
                 grid-column: 1 / span 1;
 
-                @media (max-width: 1280px) {
+                @media (max-width: 1180px) {
                     grid-column: 1 / span 1;
                     order: 1;
                 }
@@ -111,7 +111,7 @@
                 background-color: $backgroundColor2;
                 color: $headerColor3;
 
-                @media (max-width: 1280px) {
+                @media (max-width: 1180px) {
                     grid-column: 1 / span 1;
                     order: 1;
                 }

@@ -186,7 +186,7 @@ $anim_time: 1s;
     position: relative;
     margin: auto;
     text-align: center;
-    width: 40px;
+    width: 100px;
     height: 55px;
 
     &:before,
@@ -198,7 +198,11 @@ $anim_time: 1s;
         display: block;
         position: absolute;
         border-radius: 20px;
-        right: 25px;
+        right: 50px;
+
+        @media (max-width: 640px) {
+            right: 55px;
+        }
     }
 
     .text {
@@ -208,10 +212,8 @@ $anim_time: 1s;
         bottom: 0;
         font-size: 1.5rem;
         letter-spacing: 2.5px;
-        left: -35px;
-        @media (max-width: 640px) {
-            left: -30px;
-        }
+        // left: -35px;
+
     }
 
     &:hover {
@@ -222,14 +224,14 @@ $anim_time: 1s;
         &:before {
             animation: topBar_open $anim_time ease-in-out;
             animation-fill-mode: forwards;
-            top: 10px;
-            right: 55px;
+            right: 65px;
         }
 
         &:after {
             animation: bottomBar_open $anim_time ease-in-out;
             animation-fill-mode: forwards;
-            top: 35px;
+            top: 25px;
+            right: 35px;
         }
 
         .text {
@@ -243,29 +245,25 @@ $anim_time: 1s;
         &:before {
             animation: topBar_close $anim_time ease-in-out;
             animation-fill-mode: forwards;
-            top: 15px;
             transform-origin: left center;
-            @media (max-width: 640px) {
-                top: 10px;
-            }
         }
 
         &:after {
             animation: bottomBar_close $anim_time ease-in-out;
             animation-fill-mode: forwards;
-            top: 35px;
+            top: 20px;
             transform-origin: right center;
+
             @media (max-width: 640px) {
-                top: 25px;
+                top: 15px;
             }
         }
 
         .text {
             animation: menuLabel_close $anim_time ease-in;
-            animation-fill-mode: forwards; 
-            bottom: -20px;
+            animation-fill-mode: forwards;
             @media (max-width: 640px) {
-                bottom: 0;
+                bottom: 10px;
             }
         }
     }

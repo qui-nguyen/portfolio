@@ -7,7 +7,7 @@ const Jumbotron = () => {
         <div id="jumbotron" className="jumbotron">
             
             {/* <div className="jumbotron__img"> */}
-                <img src="/jumbotron-img.jpg" style= {{width : "100%"}} alt="" />
+                {/* <img src="/jumbotron-img.jpg" style= {{width : "100%"}} alt="" /> */}
                 <div className="slogan"></div>
             {/* </div> */}
             {/* <div className="jumbotron__text">
