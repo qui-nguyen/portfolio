@@ -3,8 +3,13 @@
     flex-direction: column;
     color: $titleColor;
     padding: 50px 0px;
-    width: 100%;
-    overflow-x: hidden;
+    // width: 100%;
+    overflow: hidden;
+    background-color: $backgroundColor3;
+
+    @media (max-width: 640px) {
+        padding: 50px 0 0;
+    }
 
     &__title {
         @include header;
@@ -13,5 +18,14 @@
 
     &__cards {
         width: 100%;
+        max-width: 1180px;
+
+        @media (max-width: 1180px) {
+            max-width: 800px;
+        }
+
+        @media (max-width: 640px) {
+            max-width: 300px;
+        }
     }
 }

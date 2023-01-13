@@ -3,8 +3,9 @@
     flex-direction: column;
     color: $titleColor;
     padding: 50px 0px;
-    width: 100%;
+    // width: 100%;
     overflow-x: hidden;
+    background-color: $backgroundColor3;
 
     @media (max-width: 1180px) {
         padding: 50px 0 0;
@@ -21,6 +22,11 @@
         align-items: center;
         width: 95%;
         flex: 1;
+        max-width: 1180px;
+
+        @media (max-width: 640px) {
+            max-width: 300px;
+        }
 
         .experience-date {
             @include display-flex;
@@ -32,6 +38,7 @@
                 color: $titleColor;
                 margin: 0;
             }
+
             @media (max-width: 640px) {
                 font-size: 1.875rem !important;
             }

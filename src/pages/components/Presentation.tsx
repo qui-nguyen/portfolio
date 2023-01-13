@@ -4,6 +4,9 @@ import { RiDoubleQuotesL, RiDoubleQuotesR } from "react-icons/ri";
 const Presentation = () => {
     return (
         <div id="presentation" className="wrapper">
+            <div className="fixed-background">
+                <img src="/jumbotron_bg.jpg" alt="" />
+            </div>
             <div className="presentation">
                 <div className="presentation__img">
                     <img src={portrait} alt="portrait-Qui-N." />

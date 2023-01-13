@@ -6,7 +6,6 @@
         justify-content: center;
     }
 
-
     .logo {
         @include display-flex;
         @include personal-logo;
@@ -21,19 +20,18 @@
     height: 35px;
 }
 
-
 .navbar {
     @include display-flex;
+    width: 100%;
     position: sticky;
     top: 0;
-    width: 100vw;
     background-color: #00000066;
     z-index: 99999;
     height: 120px;
-    margin-left: calc((1180px - 101vw)/2);
+    // margin-left: calc((1180px - 101vw)/2);
 
-    @media (max-width: 1180px) {
-        margin-left: -18px;
+    @media (max-width: 640px) {
+        height: 100px;
     }
 
     .navbar-container {
@@ -44,8 +42,12 @@
         width: 100%;
         max-width: 1180px;
 
+        @media (max-width: 1180px) {
+            height: 100%;
+        }
+
         @media (max-width: 640px) {
-            grid-template-columns: 1fr 2fr;
+            grid-template-columns: 1fr 1fr;
         }
 
         .navigation {

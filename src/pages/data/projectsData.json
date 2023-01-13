@@ -2,7 +2,7 @@
     {
         "name": "KodKodKod.Studio",
         "img": "projects/kodkodkod.png",
-        "desc": "Refonte et création 8 pages du site web de l'entrepise (y compris les formulaires de contact)",
+        "desc": "Refonte complète du site web de l'entreprise, y compris la création de 8 nouvelles pages et la mise à jour des formulaires de contact.",
         "link": "https://kodkodkod.studio/fr/",
         "nameLink": "KodKodKod.Studio",
         "logo": "projects/UXUI.png",
@@ -11,7 +11,7 @@
     {
         "name": "everybuddy",
         "img": "projects/everybuddy-chat.png",
-        "desc": " L'application mobile permettant de mise en relation du réseau d'Alumnis de la Capsule, grâce à une rechercher par la géolocalisation et une messagerie instantanées",
+        "desc": "Application mobile pour mettre en relation les alumnis, comprenant une recherche par géolocalisation et une messagerie instantanée.",
         "link": "https://github.com/qui-nguyen",
         "nameLink": "Github",
         "logo": "projects/messages.png",
@@ -20,7 +20,7 @@
     {
         "name": "Bike Shop",
         "img": "projects/bikeshop.png",
-        "desc": "Site e-commerce (hébergé sur Heroku) avec une mécanique de panier et de moyen de payement (Stripe)",
+        "desc": "Site e-commerce",
         "link": "https://youtu.be/W6rSbMUcpHo",
         "nameLink": "Bike Shop",
         "logo": "projects/basket.png",
@@ -29,7 +29,7 @@
     {
         "name": "Weather App",
         "img": "projects/weatherapp.png",
-        "desc": "Application web permettant d'afficher la météo d'une ville sur une carte interactive en temps réel",
+        "desc": "Application web pour afficher la météo en temps réel sur une carte interactive.",
         "link": "https://youtu.be/s-W8MsTo78A",
         "nameLink": "Weather App",
         "logo": "projects/snow.png",
@@ -38,7 +38,7 @@
     {
         "name": "Morning News",
         "img": "projects/morningnews.png",
-        "desc": "Application web qui permet d’afficher les news actualisées et de les sauvegarder en base de données (wishlist) et les lire plus tard",
+        "desc": "Application web pour afficher les actualités mises à jour et les sauvegarder.",
         "link": "https://youtu.be/fKzrdTkOt48",
         "nameLink": "Morning News",
         "logo": "projects/news.png",
@@ -47,7 +47,7 @@
     {
         "name": "My Moviz",
         "img": "projects/mymoviz.png",
-        "desc": "Application qui permet de proposer une liste de dernières sorties cinéma et de créer votre propre “whislist”",
+        "desc": "Application pour afficher les dernières sorties cinématographiques et créer une liste de souhaits.",
         "link": "https://youtu.be/_YvwbJi01gI",
         "nameLink": "My Moviz",
         "logo": "projects/movie-projector.png",
@@ -56,7 +56,7 @@
     {
         "name": "Loca Pic",
         "img": "projects/locapic.png",
-        "desc": "Application mobile qui permet de vous géolocaliser, de suivre l’historique de vos déplacements et de chatter avec l’ensemble des utilisateurs connectés à l’application",
+        "desc": "Application mobile pour géolocalisation, suivi de déplacements et discussion avec les utilisateurs connectés.",
         "link": "https://github.com/qui-nguyen",
         "nameLink": "Github",
         "logo": "projects/logo-loca.png",

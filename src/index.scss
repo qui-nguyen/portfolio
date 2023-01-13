@@ -1,16 +1,13 @@
 body {
   background-color: black;
+  margin: 0;
 }
 
 #root {
   display: block;
   margin-left: auto;
   margin-right: auto;
-  max-width: 1180px;
-
-  @media (max-width: 1180px) {
-    margin: 10px 10px;
-  }
+  // width: 100vw;
 }
 
 @import "../src/assets/styles/app.scss";

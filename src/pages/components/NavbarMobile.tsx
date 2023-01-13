@@ -27,7 +27,7 @@ const NavbarMobile = () => {
     if (visibleMenu) {
         navMobile = <div style={isHorizontal ? { display: "none" } : navMobileClose}>
             <div onClick={toogleMenu}>
-                <MenuButton menuClose={true}/>
+                <MenuButton menuClose={true} />
             </div>
         </div>
     } else {
@@ -47,11 +47,11 @@ const NavbarMobile = () => {
                     margin: "20px",
                     height: "100px"
                 }}>
-                    <div className="personal-logo">
+                    <div className="personal-logo" style={!visibleMenu && { visibility: "hidden" }}>
                         <Link to="/" ><div className="logo">QuiN.</div></Link>
                     </div>
                     <div onClick={toogleMenu} className="hamburger">
-                        <MenuButton menuClose={false}/>
+                        <MenuButton menuClose={false} />
                     </div>
                 </div>
                 <div style={{

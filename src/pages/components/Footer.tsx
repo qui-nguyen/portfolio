@@ -4,7 +4,7 @@ const Footer = () => {
         display: "flex",
         justifyContent: "center",
         alignItems: "center",
-        marginTop: "50px"
+        backgroundColor: "#0A0F1B"
     }
 
     return (

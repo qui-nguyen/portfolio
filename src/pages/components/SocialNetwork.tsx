@@ -3,10 +3,13 @@
 // import { Ri24HoursFill } from "react-icons/ri";
 
 const styleDivParent = {
-    display: "flex",
-    justifyContent: "center",
-    alignItems: "center",
-    marginTop: "30px"
+    // display: "flex",
+    // justifyContent: "center",
+    // alignItems: "center",
+    // backgroundColor: "#0A0F1B",
+    // paddingTop: "20px",
+    // maxWidth: "100%",
+    display: "none"
 }
 
 const styleLink = {
@@ -18,7 +21,7 @@ const SocialNetwork = () => {
 
     return (
         <div id="social-network" style={styleDivParent}>
-            <div>
+            <div style={{maxWidth: "1180px"}}>
                 <a href="https://github.com/qui-nguyen" style={styleLink}>
                     {/* <FaGithubSquare style={{ fontSize: "5rem", color: "#FFFFFF", marginRight: "3rem" }} /> */}
                     <img src="/icon-github.png" alt="icon-gtihub" style={{ height: "6rem", width: "auto", marginRight: "3rem" }} />
