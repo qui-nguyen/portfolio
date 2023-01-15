@@ -8,7 +8,6 @@ import Experiences from './components/Experiences';
 import Formations from './components/Formations';
 import Footer from './components/Footer';
 import Contact from './components/Contact';
-import React from 'react';
 
 const HomePage = () => {
 

@@ -1,105 +1,117 @@
-.contact {
+.contact-button {
     @include display-flex;
-    flex-direction: column;
-    color: $titleColor;
-    padding: 50px 0px;
-    // width: 100%;
-    overflow: hidden;
+    transition: 400ms;
+    position: fixed;
+    right: 10%;
+    bottom: 50px;
+    width: 80px;
+    height: 80px;
+    text-align: center;
+    line-height: 60px;
+    border-radius: 50%;
     background-color: $backgroundColor3;
+    color: $backgroundColor1;
+    font-size: 24px;
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.26), 0 2px 10px 0 rgba(0, 0, 0, 0.22);
+    cursor: pointer;
+    z-index: 10;
 
-    @media (max-width: 1180px) {
-        padding: 50px 0 0;
-    }
-    @media (max-width: 640px) {
-        padding: 0;
+    &:hover {
+        background: darken($backgroundColor3, 5%);
+        box-shadow: 0 5px 11px 0 rgba(0, 0, 0, 0.28), 0 4px 15px 0 rgba(0, 0, 0, 0.25);
     }
 
-    &__title {
-        @include header;
-    }
-
-    &__form {
+    div {
         @include display-flex;
-        width: 150%;
-        height: 850px;
+        transition: 400ms;
+        opacity: 0;
+        width: 0px;
+        height: 0px;
+        text-align: center;
+        border-radius: 50%;
+        color: #FFFFFF;
+        font-size: 24px;
+        box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.26), 0 2px 10px 0 rgba(0, 0, 0, 0.22);
+        cursor: pointer;
+        z-index: -1;
+        position: relative;
 
-        @media (max-width: 1180px) {
-            width: 100%;
-            height: auto;
-        }
-        @media (max-width: 640px) {
-            max-width: 300px;
-        }
+        .social-network-icon {
+            height: 100%;
 
-        .form {
-            @include display-flex;
-            flex-direction: column;
-            width: 800px;
-
-            @media (max-width: 640px) {
-                width: 100%;
+            &:hover {
+                scale: none;
             }
+        }
 
-            h3 {
-                color: white;
-            }
+        &:hover {
+            box-shadow: 0 5px 11px 0 rgba(0, 0, 0, 0.28), 0 4px 15px 0 rgba(0, 0, 0, 0.25);
+            z-index: 10;
+        }
 
-            &__content {
+        &:nth-child(2) {
+            transition-delay: 200ms;
+            position: absolute;
+            right: 30px;
+            bottom: 30px;
+            background: $backgroundColor3;
+        }
+
+        &:nth-child(3) {
+            transition-delay: 300ms;
+            position: absolute;
+            right: 30px;
+            bottom: 30px;
+            background: $backgroundColor3;
+        }
+
+        &:nth-child(4) {
+            transition-delay: 400ms;
+            position: absolute;
+            right: 30px;
+            bottom: 30px;
+            background: $backgroundColor3;
+        }
+    }
+
+    &:hover {
+        div {
+            opacity: 1;
+            width: 50px;
+            height: 50px;
+
+            a {
                 @include display-flex;
-                flex-direction: column;
-                width: 100%;
-                margin: 3% 0;
-                padding: 3% 0;
-                border-radius: 10px;
-                background-image: linear-gradient(to right top,
-                        rgba(230, 216, 238, 0.5),
-                        rgba(51, 28, 114, 0.5),
-                        rgba(28, 40, 112, 0.5),
-                        rgba(10, 76, 168, 0.5),
-                        rgba(4, 109, 201, 0.5),
-                        rgba(76, 106, 185, 0.5),
-                        rgba(97, 97, 145, 0.5),
-                        rgba(136, 122, 174, 0.5),
-                        rgba(162, 81, 142, 0.5),
-                        rgba(188, 89, 116, 0.5),
-                        rgba(201, 112, 92, 0.5),
-                        rgba(231, 154, 39, 0.5));
+                scale: none;
+            }
 
-                // background-color: rgba($color: rgb(255, 255, 255), $alpha: 1);
-                .form-group {
-                    @include display-flex;
-                    width: 80%;
-                    margin: 10px 0;
+            &:nth-child(2) {
+                right: 120px;
+                bottom: 20px;
 
-                    input,
-                    textarea {
-                        width: 100%;
-                        font-family: 'Poppins', 'Open Sans', 'Montserrat', 'Lora';
-                        font-size: 1.5rem;
-                        padding: 10px;
-                        opacity: 1;
-                        border: none;
-                        box-sizing: border-box;
-                    }
+                &:hover {
+                    transition-delay: 200ms;
+                    background: darken($backgroundColor3, 5%);
                 }
             }
 
-            &__btn {
-                @include btn-style;
+            &:nth-child(3) {
+                right: 80px;
+                bottom: 85px;
 
-                &:hover,
-                &:focus {
-                    scale: 1.1;
+                &:hover {
+                    transition-delay: 300ms;
+                    background: darken($backgroundColor3, 5%);
                 }
+            }
 
-                button {
-                    background-color: transparent;
-                    border: none;
-                    cursor: pointer;
+            &:nth-child(4) {
+                right: 0px;
+                bottom: 105px;
 
-                    h3 {
-                        color: $btnTextColor;
-                    }
+                &:hover {
+                    transition-delay: 400ms;
+                    background: darken($backgroundColor3, 5%);
                 }
             }
         }
