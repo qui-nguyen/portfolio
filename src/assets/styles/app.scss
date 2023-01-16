@@ -8,30 +8,30 @@
 
 @import "utils/responsive";
 
-@import "components/navbarMobile.scss";
+@import "components/navbarMobile";
 
-@import "components/header.scss";
+@import "components/header";
 
-@import "components/jumbotron.scss";
+@import "components/jumbotron";
 
-@import "components/presentation.scss";
+@import "components/presentation";
 
-@import "components/projects.scss";
+@import "components/projects";
 
-@import "components/cardProject.scss";
+@import "components/cardProject";
 
-@import "components/competences.scss";
+@import "components/competences";
 
-@import "components/cardFormation.scss";
+@import "components/cardFormation";
 
-@import "components/experiences.scss";
+@import "components/experiences";
 
-@import "components/formations.scss";
+@import "components/formations";
 
-@import "components/contact.scss";
+@import "components/contact";
 
-@import "components/messageSentModal.scss";
+@import "components/modals/messageSentModal";
 
-@import "capsules/menuButton.scss";
+@import "capsules/menuButton";
 
-@import "components/formContactModal.scss";
+@import "components/modals/formContactModal";

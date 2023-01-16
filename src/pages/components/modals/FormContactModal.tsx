@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import emailjs from "@emailjs/browser";
 import MessageSentModal from './MessageSentModal';
 import { HiX } from "react-icons/hi";
@@ -24,47 +24,51 @@ const FormContactModal = ({ open, toggleModalFormContact }: Props) => {
     const [success, setSuccess] = useState<boolean>(false);
 
     // Toogle modal MessageSent
-    const toggleModal = () => {
+    const toggleModalMessageSent = () => {
         setIsVisible(prev => !isVisible);
+        if(isVisible) toggleModalFormContact();
     }
     // Submit
     const handleSubmit = (e: any) => {
         e.preventDefault();
-        if (form.current) {
-            emailjs.sendForm(REACT_APP_SERVICE_ID!, REACT_APP_TEMPLATE_ID!, form.current, REACT_APP_PUBLIC_KEY)
-                .then((result) => {
-                    console.log(result.text);
-                    result.status === 200 && setSuccess(true);
-                }, (error) => {
-                    console.log(error.text);
-                });
-        };
+        // if (form.current) {
+        //     emailjs.sendForm(REACT_APP_SERVICE_ID!, REACT_APP_TEMPLATE_ID!, form.current, REACT_APP_PUBLIC_KEY)
+        //         .then((result) => {
+        //             console.log(result.text);
+        //             result.status === 200 && setSuccess(true);
+        //         }, (error) => {
+        //             console.log(error.text);
+        //         });
+        // };
+        setSuccess(true);
     }
 
-    if (success) {
-        // Reset input with useState
-        setName('');
-        setEmail('');
+    useEffect(() => {
+        if (success) {
+            // Reset input with useState
+            setName('');
+            setEmail('');
 
-        // Reset messages with useRef
-        if (messageInput.current) {
-            messageInput.current.value = '';
+            // Reset messages with useRef
+            if (messageInput.current) {
+                messageInput.current.value = '';
+            }
+            // Reset status
+            setSuccess(false);
+            // Show modal
+            toggleModalMessageSent();
         }
-        // Reset status
-        setSuccess(false);
-        // Show modal
-        toggleModal();
-    }
+    }, [success])
 
     if (!open) return null;
-    else {
+    else if (open && !isVisible) {
         return (
             <>
                 <div id="contact" className="form-contact">
                     <div className="box">
-                        <div 
+                        <div
                             className="button-close"
-                            onClick = {toggleModalFormContact} >
+                            onClick={toggleModalFormContact} >
                             <HiX style={{ color: "#272729", width: "3rem", height: "3rem" }} />
                         </div>
                         <div className="box__title"><h1>Contact</h1></div>
@@ -113,16 +117,13 @@ const FormContactModal = ({ open, toggleModalFormContact }: Props) => {
                                 </div>
                             </form>
                         </div>
-
                     </div>
-
                 </div>
-
-                <MessageSentModal isVisible={isVisible} toggleModal={toggleModal}></MessageSentModal>
             </>
         )
+    } else {
+        return <MessageSentModal isVisible={isVisible} toggleModalMessageSent={toggleModalMessageSent}></MessageSentModal>
     }
-
 }
 
 export default FormContactModal;

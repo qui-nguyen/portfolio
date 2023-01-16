@@ -81,6 +81,7 @@
             height: 50px;
 
             a {
+                height: 100%;
                 @include display-flex;
                 scale: none;
             }
@@ -90,7 +91,7 @@
                 bottom: 20px;
 
                 &:hover {
-                    transition-delay: 200ms;
+                    transition-delay: 100ms;
                     background: darken($backgroundColor3, 5%);
                 }
             }
@@ -100,7 +101,7 @@
                 bottom: 85px;
 
                 &:hover {
-                    transition-delay: 300ms;
+                    transition-delay: 100ms;
                     background: darken($backgroundColor3, 5%);
                 }
             }
@@ -110,7 +111,7 @@
                 bottom: 105px;
 
                 &:hover {
-                    transition-delay: 400ms;
+                    transition-delay: 100ms;
                     background: darken($backgroundColor3, 5%);
                 }
             }
