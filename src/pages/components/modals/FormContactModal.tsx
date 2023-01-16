@@ -1,9 +1,11 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
+import ReCAPTCHA from 'react-google-recaptcha';
 import emailjs from "@emailjs/browser";
 import MessageSentModal from './MessageSentModal';
+import Recaptcha from '../../capsules/Recaptcha';
 import { HiX } from "react-icons/hi";
 
-const { REACT_APP_SERVICE_ID, REACT_APP_TEMPLATE_ID, REACT_APP_PUBLIC_KEY } = process.env
+const { REACT_APP_SERVICE_ID, REACT_APP_TEMPLATE_ID, REACT_APP_PUBLIC_KEY, REACT_APP_RECAPTCHA_SITE_KEY, REACT_APP_RECAPTCHA_PRIVATE_KEY } = process.env
 
 interface Props {
     open: boolean;
@@ -12,26 +14,41 @@ interface Props {
 
 const FormContactModal = ({ open, toggleModalFormContact }: Props) => {
 
+    // Recaptcha
+    const [tokenRecaptcha, setTokenRecaptcha] = useState<string | null>(null);
+    const [resetRecaptcha, setResetRecaptcha] = useState<boolean>(false);
+
+
+    // const reRef = useRef<ReCAPTCHA>(null);
+    // const [recaptchaKey, setRecaptchakey] = useState<string|undefined>(REACT_APP_RECAPTCHA_SITE_KEY);
+
     // Inputs
     const [name, setName] = useState<string>('');
     const [email, setEmail] = useState<string>('');
-    const messageInput = React.useRef<HTMLTextAreaElement>(null);
+    const messageInput = useRef<HTMLTextAreaElement>(null);
     // Form
-    const form = React.useRef<HTMLFormElement>(null);
+    const form = useRef<HTMLFormElement>(null);
     // Modal
     const [isVisible, setIsVisible] = useState<boolean>(false);
     // Status send message
     const [success, setSuccess] = useState<boolean>(false);
 
+    const handlerCheckRecaptcha = (token: string | null) => {
+        if (token) {
+            setTokenRecaptcha(token);
+        };
+    };
+
     // Toogle modal MessageSent
     const toggleModalMessageSent = () => {
-        setIsVisible(prev => !isVisible);
-        if(isVisible) toggleModalFormContact();
-    }
-    // Submit
-    const handleSubmit = (e: any) => {
+        setIsVisible(!isVisible);
+        if (isVisible) toggleModalFormContact();
+    };
+
+    const handleSubmit = async (e: any) => {
         e.preventDefault();
-        // if (form.current) {
+
+        // if (form.current && tokenRecaptcha != null) {
         //     emailjs.sendForm(REACT_APP_SERVICE_ID!, REACT_APP_TEMPLATE_ID!, form.current, REACT_APP_PUBLIC_KEY)
         //         .then((result) => {
         //             console.log(result.text);
@@ -40,8 +57,13 @@ const FormContactModal = ({ open, toggleModalFormContact }: Props) => {
         //             console.log(error.text);
         //         });
         // };
-        setSuccess(true);
-    }
+
+        if (tokenRecaptcha != null) {
+            setResetRecaptcha(true);
+            setTokenRecaptcha(null);
+            setSuccess(true);
+        };
+    };
 
     useEffect(() => {
         if (success) {
@@ -55,16 +77,18 @@ const FormContactModal = ({ open, toggleModalFormContact }: Props) => {
             }
             // Reset status
             setSuccess(false);
+
+            setResetRecaptcha(false);
+
             // Show modal
             toggleModalMessageSent();
         }
     }, [success])
 
-    if (!open) return null;
-    else if (open && !isVisible) {
+    // if (!isVisible) {
         return (
             <>
-                <div id="contact" className="form-contact">
+                <div id="contact" className="form-contact" style={open && !isVisible ? { "display": "" } : { "display": "none" }}>
                     <div className="box">
                         <div
                             className="button-close"
@@ -117,13 +141,20 @@ const FormContactModal = ({ open, toggleModalFormContact }: Props) => {
                                 </div>
                             </form>
                         </div>
+                        <Recaptcha
+                            reset={resetRecaptcha}
+                            handlerCheckRecaptcha={handlerCheckRecaptcha}
+                        ></Recaptcha>
                     </div>
                 </div>
+                <MessageSentModal isVisible={isVisible} toggleModalMessageSent={toggleModalMessageSent}></MessageSentModal>
             </>
         )
-    } else {
-        return <MessageSentModal isVisible={isVisible} toggleModalMessageSent={toggleModalMessageSent}></MessageSentModal>
-    }
+    // }
+    // else {
+    //     // return <MessageSentModal isVisible={isVisible} toggleModalMessageSent={toggleModalMessageSent}></MessageSentModal>
+    //     // return <MessageSentModal isVisible={false} toggleModalMessageSent={toggleModalMessageSent}></MessageSentModal>
+    // }
 }
 
 export default FormContactModal;

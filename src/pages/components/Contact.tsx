@@ -6,9 +6,10 @@ const Contact = () => {
     const [open, setOpen] = useState(false);
 
     const toggleModalFormContact = () => {
-        setOpen(prev => !open)
+        setOpen(!open)
     }
-    return (<>
+    return (
+    <>
         <div className='contact-button'>
             <img src="/icon-communication.png" alt="icon communication" style={{ height: "4rem", width: "auto" }} />
             <div><a className="social-network-icon" href="https://github.com/qui-nguyen"><img src="/icon-github.png" alt="icon-gtihub" style={{ height: "3rem", width: "auto" }} /></a></div>
@@ -20,8 +21,6 @@ const Contact = () => {
             toggleModalFormContact={toggleModalFormContact}
         ></FormContactModal>
     </>
-
-
     )
 }
 

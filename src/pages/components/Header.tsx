@@ -8,7 +8,7 @@ const Header = () => {
     const [open, setOpen] = useState(false);
 
     const toggleModalFormContact = () => {
-        setOpen(prev => !open)
+        setOpen(!open);
     }
 
     return (
