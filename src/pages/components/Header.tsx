@@ -9,7 +9,7 @@ const Header = () => {
 
     const toggleModalFormContact = () => {
         setOpen(!open);
-    }
+    };
 
     return (
         <div id="navbar" className="navbar">

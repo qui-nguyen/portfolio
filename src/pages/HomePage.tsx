@@ -7,7 +7,7 @@ import Competences from './components/Competences';
 import Experiences from './components/Experiences';
 import Formations from './components/Formations';
 import Footer from './components/Footer';
-import Contact from './components/Contact';
+import ButtonContact from './components/ButtonContact';
 
 const HomePage = () => {
 
@@ -21,7 +21,7 @@ const HomePage = () => {
             <Competences></Competences>
             <Experiences></Experiences>
             <Formations></Formations>
-            <Contact></Contact>
+            <ButtonContact></ButtonContact>
             <Footer></Footer>
         </>)
 }

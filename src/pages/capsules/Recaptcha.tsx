@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useRef } from 'react';
+import { useEffect, useRef } from 'react';
 import ReCAPTCHA from 'react-google-recaptcha';
 
 const { REACT_APP_RECAPTCHA_SITE_KEY } = process.env
@@ -13,7 +13,7 @@ const Recaptcha = ({ reset, handlerCheckRecaptcha }: Props) => {
     // Recaptcha
     const reRef = useRef<ReCAPTCHA>(null);
 
-    // Submit
+    // Check recaptcha
     const onChange = (value: string | null) => {
         handlerCheckRecaptcha(value);
     };
@@ -29,11 +29,10 @@ const Recaptcha = ({ reset, handlerCheckRecaptcha }: Props) => {
             sitekey={REACT_APP_RECAPTCHA_SITE_KEY!}
             ref={reRef}
             onChange={onChange}
+            theme="dark"
         >
         </ReCAPTCHA>
     )
 }
-
-
 
 export default Recaptcha;
