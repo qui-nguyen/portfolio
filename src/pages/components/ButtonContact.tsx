@@ -1,7 +1,7 @@
 import { useState } from "react";
 import FormContactModal from "./modals/FormContactModal";
 
-const Contact = () => {
+const ButtonContact = () => {
     // FormContactModal
     const [open, setOpen] = useState(false);
 
@@ -24,4 +24,4 @@ const Contact = () => {
     )
 }
 
-export default Contact;
+export default ButtonContact;
