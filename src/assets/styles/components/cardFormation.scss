@@ -131,16 +131,17 @@
                     @media (max-width: 640px) {}
 
                     .title {
-                        margin: 10px;
+                        // margin: 10px;
 
                         h2 {
-                            line-height: 0;
+                            // line-height: 0;
                         }
                     }
 
                     .sub-title {
                         h3 {
-                            line-height: 0;
+                            // line-height: 0;
+                            text-align: center;
                         }
                     }
                 }
