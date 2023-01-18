@@ -63,7 +63,7 @@ const NavbarMobile = () => {
                 <div style={{
                     display: "flex",
                     flexDirection: "column",
-                    justifyContent: "center",
+                    justifyContent: "flex-start",
                     alignItems: "center",
                     height: "80%",
                     margin: "20px"

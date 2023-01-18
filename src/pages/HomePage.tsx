@@ -1,3 +1,4 @@
+import { useState, useEffect } from 'react';
 import Header from './components/Header';
 import Jumbotron from './components/Jumbotron';
 import SocialNetwork from './components/SocialNetwork';
@@ -10,18 +11,31 @@ import Footer from './components/Footer';
 import ButtonContact from './components/ButtonContact';
 
 const HomePage = () => {
+    const [display, setDisplay] = useState<boolean>(false);
+    const [scrollY, setScrollY] = useState<number>(0);
+
+    useEffect(() => {
+        window.addEventListener("scroll", onScroll);
+        return () =>
+            window.removeEventListener("scroll", onScroll);
+    }, [scrollY])
+
+    const onScroll = () => {
+        setScrollY(window.scrollY);
+        (scrollY > 500 && ((window.innerHeight + scrollY) <= document.body.offsetHeight - 100)) ? setDisplay(true) : setDisplay(false);
+    };
 
     return (
         <>
             <Header></Header>
-            <Jumbotron></Jumbotron>
             <Presentation></Presentation>
-            <SocialNetwork></SocialNetwork>
             <Projects></Projects>
             <Competences></Competences>
             <Experiences></Experiences>
             <Formations></Formations>
-            <ButtonContact></ButtonContact>
+            <ButtonContact
+                isVisible={display}
+            ></ButtonContact>
             <Footer></Footer>
         </>)
 }

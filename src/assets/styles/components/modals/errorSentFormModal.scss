@@ -32,12 +32,14 @@
 
         &__text {
             width: 80%;
+
             @media (max-width: 1180px) {
                 width: 60vw;
                 margin-top: 70px
             }
 
-            h2, p {
+            h2,
+            p {
                 text-align: center;
             }
         }
@@ -54,6 +56,10 @@
             @media (max-width: 1180px) {
                 top: 15%;
                 right: 15%;
+            }
+
+            .button-close {
+                cursor: pointer;
             }
         }
     }

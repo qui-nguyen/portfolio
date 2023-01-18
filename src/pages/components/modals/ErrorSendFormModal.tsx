@@ -12,7 +12,7 @@ const ErrorSendFormModal = ({ notVisible, closeModalErrorSendForm }: Props) => {
         <div className="error-sent-form-modal" >
             <div className="box">
                 <div className="box__close">
-                    <div onClick={closeModalErrorSendForm}>
+                    <div className="button-close" onClick={closeModalErrorSendForm}>
                         <HiX style={{ color: "#fff", width: "3rem", height: "3rem" }} />
                     </div>
                 </div>
