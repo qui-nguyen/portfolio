@@ -74,8 +74,6 @@ const FormContactModal = ({ open, toggleModalFormContact }: Props) => {
         };
         // Reset recaptcha
         setResetRecaptcha(false);
-
-        // setResetRe(false);
     }, [success]);
 
     return (

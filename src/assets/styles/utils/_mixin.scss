@@ -8,12 +8,18 @@
     border: thick #FFFFFF;
     width: 100px;
     height: 100px;
-    background-color: $backgroundColor1;
+    background-color: $backgroundColor3;
     color: $textColor;
     font-size: 30px;
     font-weight: 900;
     border-radius: 5%;
-    box-shadow: 3px 4px 10px #4e5156;
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.26), 0 2px 10px 0 rgba(0, 0, 0, 0.22);
+    transition: 400ms;
+
+    &:hover {
+        background: darken($backgroundColor3, 20%);
+        box-shadow: 0 5px 11px 0 rgba(0, 0, 0, 0.28), 0 4px 15px 0 rgba(0, 0, 0, 0.25);
+    }
 
     @media (max-width: 640px) {
         width: 60px;
@@ -48,13 +54,14 @@
     scale: 1;
     color: white;
 
-    &:link, &:visited {
+    &:link,
+    &:visited {
         text-decoration: none;
     }
 
     &:hover,
     &:focus {
-        scale: 1.1;
+        scale: 1.05;
     }
 
     &:active {
@@ -66,12 +73,13 @@
 @mixin btn-style {
     @include display-flex;
     width: fit-content;
-    height: 35px;
+    min-width: 200px;
+    height: 30px;
     padding: 10px;
     color: $btnTextColor;
     background-color: $mainColor1;
     border: none;
-    font: normal normal 500 1.5rem Poppins;
+    font: normal normal 500 1rem Poppins;
     box-shadow: 0px 23.5167px 48.9931px rgba(178, 64, 93, 0.1);
     border-radius: 10px;
     cursor: pointer !important;

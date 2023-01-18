@@ -13,7 +13,7 @@ const MessageSentModal = ({ isVisible, closeModalMessageSent }: Props) => {
             <div className="box">
                 <img src="/icon-message-sent.svg" alt="icon message sent" style={{ height: "7rem", width: "auto" }} />
                 <div className="box__close">
-                    <div onClick={closeModalMessageSent}>
+                    <div className="button-close" onClick={closeModalMessageSent}>
                         <HiX style={{ color: "#fff", width: "3rem", height: "3rem" }} />
                     </div>
                 </div>
