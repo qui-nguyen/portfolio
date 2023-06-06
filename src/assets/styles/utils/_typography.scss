@@ -92,3 +92,23 @@ p {
     font-size: 1.2rem !important;
     line-height: 2rem;
 }
+
+@keyframes gradient {
+    0% {
+        background-position: 0 50%;
+      }
+      50% {
+        background-position: 100% 50%;
+      }
+      100% {
+        background-position: 0 50%;
+      }
+}
+
+.animatedGradientText {
+  animation: gradient 5s ease-in-out infinite;
+  background: linear-gradient(to right, rgb(236, 0, 140), rgb(0, 112, 243));
+  background-size: 300%;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}

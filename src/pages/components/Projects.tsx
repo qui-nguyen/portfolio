@@ -52,10 +52,10 @@ const Projects = () => {
                     <Swiper
                         slidesPerView={isDesktop || isHorizontal ? 3 : (isTablet ? 2 : 1)}
                         spaceBetween={30}
-                        autoplay={{
-                            delay: 3000,
-                            disableOnInteraction: false,
-                        }}
+                        // autoplay={{
+                        //     delay: 3000,
+                        //     disableOnInteraction: false,
+                        // }}
                         pagination={{
                             clickable: true,
                         }}

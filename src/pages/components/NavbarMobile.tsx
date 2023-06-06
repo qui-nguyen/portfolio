@@ -68,6 +68,9 @@ const NavbarMobile = () => {
                     height: "80%",
                     margin: "20px"
                 }}>
+                    <a href="https://quinguyen.vercel.app/" target="_blank" rel="noopener noreferrer" className='animatedGradientText navigation__item'>
+                        <h1>Nouvelle version</h1>
+                    </a>
                     <a href="#presentation" onClick={toogleMenu} style={{ color: "#FFF" }}><h1>Présentation</h1></a>
                     <a href="#projects" onClick={toogleMenu} style={{ color: "#FFF" }}><h1>Projets</h1></a>
                     <a href="#experiences" onClick={toogleMenu} style={{ color: "#FFF" }}><h1>Expériences</h1></a>

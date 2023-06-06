@@ -10,7 +10,6 @@ const ProjectsPage = () => {
             <Jumbotron></Jumbotron>
             <SocialNetwork></SocialNetwork>
             <Presentation></Presentation>
-            <div>Google con heo</div>
         </div>)
 }
 

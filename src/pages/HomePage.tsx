@@ -9,6 +9,8 @@ import Experiences from './components/Experiences';
 import Formations from './components/Formations';
 import Footer from './components/Footer';
 import ButtonContact from './components/ButtonContact';
+import FloatInformation from './components/FloatInformation';
+
 
 const HomePage = () => {
     const [display, setDisplay] = useState<boolean>(false);
@@ -33,6 +35,7 @@ const HomePage = () => {
             <Competences></Competences>
             <Experiences></Experiences>
             <Formations></Formations>
+            <FloatInformation />
             <ButtonContact
                 isVisible={display}
             ></ButtonContact>

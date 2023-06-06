@@ -1,12 +1,31 @@
 [
     {
+        "name": "Koriny",
+        "img": "projects/korinySite.png",
+        "desc": "Plateforme coréen de vente et de location immobilière aux États-Unis avec une interface trilingue anglais-coréen-chinois, une carte géographique et exportation du rapport pdf.",
+        "link": "https://koriny.com",
+        "nameLink": "Koriny",
+        "logo": "projects/UXUI.png",
+        "techno": [
+            "React",
+            "SCSS",
+            "Google Map API",
+            "jsPdf"
+        ]
+    },
+    {
         "name": "KodKodKod.Studio",
         "img": "projects/kodkodkod.png",
         "desc": "Refonte complète du site web de l'entreprise, y compris la création de 8 nouvelles pages et la mise à jour des formulaires de contact.",
         "link": "https://kodkodkod.studio/fr/",
         "nameLink": "KodKodKod.Studio",
         "logo": "projects/UXUI.png",
-        "techno": ["SCSS", "HTML", "Twig", "Symfony"]
+        "techno": [
+            "SCSS",
+            "HTML",
+            "Twig",
+            "Symfony"
+        ]
     },
     {
         "name": "everybuddy",
@@ -15,25 +34,15 @@
         "link": "https://github.com/qui-nguyen",
         "nameLink": "Github",
         "logo": "projects/messages.png",
-        "techno": ["React Native", "Expo", "Socket.io", "Redux", "Express", "MongoDB", "Figma"]
-    },
-    {
-        "name": "Bike Shop",
-        "img": "projects/bikeshop.png",
-        "desc": "Site e-commerce",
-        "link": "https://youtu.be/W6rSbMUcpHo",
-        "nameLink": "Bike Shop",
-        "logo": "projects/basket.png",
-        "techno": ["JavaScript", "EJS", "Express", "MongoDB"]
-    },
-    {
-        "name": "Weather App",
-        "img": "projects/weatherapp.png",
-        "desc": "Application web pour afficher la météo en temps réel sur une carte interactive.",
-        "link": "https://youtu.be/s-W8MsTo78A",
-        "nameLink": "Weather App",
-        "logo": "projects/snow.png",
-        "techno": ["React", "JavaScript", "Express", "MongoDB", "Heroku"]
+        "techno": [
+            "React Native",
+            "Expo",
+            "Socket.io",
+            "Redux",
+            "Express",
+            "MongoDB",
+            "Figma"
+        ]
     },
     {
         "name": "Morning News",
@@ -42,7 +51,13 @@
         "link": "https://youtu.be/fKzrdTkOt48",
         "nameLink": "Morning News",
         "logo": "projects/news.png",
-        "techno": ["React", "Redux", "Express", "MongoDB", "Heroku"]
+        "techno": [
+            "React",
+            "Redux",
+            "Express",
+            "MongoDB",
+            "Heroku"
+        ]
     },
     {
         "name": "My Moviz",
@@ -51,7 +66,13 @@
         "link": "https://youtu.be/_YvwbJi01gI",
         "nameLink": "My Moviz",
         "logo": "projects/movie-projector.png",
-        "techno": ["React", "Redux", "Express", "MongoDB", "Heroku"]
+        "techno": [
+            "React",
+            "Redux",
+            "Express",
+            "MongoDB",
+            "Heroku"
+        ]
     },
     {
         "name": "Loca Pic",
@@ -60,6 +81,13 @@
         "link": "https://github.com/qui-nguyen",
         "nameLink": "Github",
         "logo": "projects/logo-loca.png",
-        "techno": ["React Native", "Expo", "Socket.io", "Redux", "Express", "MongoDB"]
+        "techno": [
+            "React Native",
+            "Expo",
+            "Socket.io",
+            "Redux",
+            "Express",
+            "MongoDB"
+        ]
     }
 ]
