@@ -2,37 +2,6 @@ import CardFormation from './CardFomation';
 
 import formationsData from "../data/formationsData.json";
 
-// const formationsData: { domain: string, schoolName: string, img: string, desc: string, year: string }[] = [
-//     {
-//         domain: "FullStack JS",
-//         schoolName: "La Capsule",
-//         img: "/formations/lacapsule-batch55.jpg",
-//         desc: "",
-//         year: "2022"
-//     },
-//     {
-//         domain: "Data Analyst",
-//         schoolName: "Openclassrooms",
-//         img: "/formations/m2-IBCP.jpg",
-//         desc: "",
-//         year: "2021 - 2022"
-//     },     
-//     {
-//         domain: "FullStack JS",
-//         schoolName: "La Capsule",
-//         img: "/formations/lacapsule-batch55.jpg",
-//         desc: "",
-//         year: "2022"
-//     },
-//     {
-//         domain: "Data Analyst",
-//         schoolName: "Openclassrooms",
-//         img: "/formations/m2-IBCP.jpg",
-//         desc: "",
-//         year: "2021 - 2022"
-//     }
-// ];
-
 const Formations = () => {
     return (
         <>

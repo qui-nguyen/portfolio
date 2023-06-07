@@ -1,0 +1,49 @@
+[
+    {
+        "domain": "Developpeuse JS",
+        "companyName": "",
+        "companyAdress": "France",
+        "position": "Freelance",
+        "desc": [
+            "FullStack JS"
+        ],
+        "date": "09/2022-Aujourd'hui",
+        "imgIcon": "/experiences/laptop.png"
+    },
+    {
+        "domain": "Front-end",
+        "companyName": "KodKodKodStudio",
+        "companyAdress": "Lyon-France",
+        "position": "Stage",
+        "desc": [
+            "Refonte tous les sites web de l'entreprise (8 pages)",
+            "Mettre en place de nouveaux formulaires de contact pour améliorer la communication avec les clients",
+            "Maintenir les sites Web de clients côté front-end.",
+            "Améliorer la partie front-end d'une application web pour rendre l'interface utilisateur plus intuitive et facile à utiliser."
+        ],
+        "date": "09/2022-03/2023",
+        "imgIcon": "/experiences/laptop.png"
+    },
+    {
+        "domain": "",
+        "companyName": "La Capsule",
+        "companyAdress": "Lyon-France",
+        "position": "Teacher Assistant",
+        "desc": [
+            "Aider les futurs développeurs en leur fournissant de l'aide sur place et à distance (déboguer leurs codes, expliquer à nouveau les concepts vus pendant la formation, etc.)"
+        ],
+        "date": "10-11/2022",
+        "imgIcon": "/experiences/laptop.png"
+    },
+    {
+        "domain": "Biochimie",
+        "companyName": "IBCP",
+        "companyAdress": "Lyon-France",
+        "position": "Stage",
+        "desc": [
+            "Production et purification de la protéine (de laminine LG4/5)"
+        ],
+        "date": "01-06/2017",
+        "imgIcon": "/experiences/microscope.png"
+    }
+]
